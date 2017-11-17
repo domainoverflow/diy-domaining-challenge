@@ -2,7 +2,7 @@ DIY Domaining Challenge Custom Domain Marketplace series from DomainOverflow.com
 <br>
 
 <a href="https://domainoverflow.com/index.php/2017/11/03/domaining-diy-challenge-domain-marketplace-part" target="_blank">
-         DOMAINING DIY CHALLENGE Part I: Your Own Custom Domain Marketplace.</a><br>
+         DOMAINING DIY CHALLENGE Part I: Your Own Custom Domain Marketplace.</a><br><br>
          
          
 <a href="https://domainoverflow.com/index.php/2017/11/04/diy-domain-market-place-part-ii-creating-proper-checkout-page-domains/"
