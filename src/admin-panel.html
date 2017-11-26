@@ -1,0 +1,115 @@
+d> </head>
+
+
+
+<body>
+<div class="c1426">DomainOverflow.com's DIY Challenge, Build your own Domain Marketplace 
+PART IV: Admin dashboard 
+</div>
+<div class="blk-row">
+  <div class="blk1">
+    <form class="form" onSubmit="return PreValidation()" 
+	method="post" action ="bulk-publish-custom-domain-market.php"
+	
+	
+	>
+      <div class="form-group">
+        <label class="label">Please paste domain(s) below:</label>
+      </div>
+      <textarea class="textarea" required ></textarea>
+	  <!-- the required keyword makes the input mandatory, easing our post-validation-->
+	  
+      <div class="blk-row">
+      </div>
+      <br/>
+      <div class="form-group">
+        <label class="label">Marketplace name:</label>
+        <input required class="input"   placeholder="Please enter marketplace name"/>
+      </div>
+      <br/>
+      <div class="form-group">
+        <label class="label">Please choose template</label>
+        <select requirede class="select"><option>- Please choose template -</option>
+		<option value="1">Template from PART II, of this series</option></select>
+      </div>
+      <div class="form-group">
+      </div>
+      <br/>
+      <div class="form-group">
+        <button class="button" type="submit">Click here to publish marketplace</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="blk-row">
+</div>
+<script>
+
+function PreValidation () {
+
+//console.log ("besides empty validation, all other validations will take place 
+on the server side, for your convenience but most importantly: security.");
+//
+
+
+
+}
+
+</script>
+
+
+
+
+<style>*{
+  box-sizing: border-box;
+  }
+  body{
+    margin:0;
+  }
+  .blk1{
+    width:100%;
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    min-height:75px;
+  }
+  .c1426{
+    padding:10px;
+    text-align:center;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:40px;
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+  }
+  .form{
+    text-align:center;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:21px;
+    background-color:rgb(20, 74, 229);
+    color:white;
+  }
+  .textarea{
+    width:380px;
+    height:200px;
+  }
+  .button{
+    width:450px;
+    height:40px;
+    font-family:Verdana, Geneva, sans-serif;
+    color:white;
+    background-color:rgb(133, 0, 0);
+    font-size:16px;
+  }
+  *{
+    box-sizing:border-box;
+  }
+  body{
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+  }
+</style>
