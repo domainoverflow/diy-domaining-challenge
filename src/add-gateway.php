@@ -1,13 +1,20 @@
-nclude 'xmlapi.php'; // Cpanel WHM Library for API 2 
+<?php
 
+include 'xmlapi.php'; // Cpanel WHM Library for API 2 
+print_r($_POST);
 
  ini_set('max_execution_time', 300); //300 seconds = 5 minutes
   
  #AddDomain  
  
+ // get the required fields
 $domains = $_POST["domainlist"]; 
 $chosengateway = $_POST["chosengateway"]; 
 $marketplacename = $_POST["marketplacename"]; 
+$user = $_POST["authuser"];
+$pwd = $_POST["authpassword"]; 
+
+
 
 
 if ($chosengateway=="cpanel") {
@@ -28,8 +35,11 @@ $server =   "localhost"; // or 127.0.0.1 ...
 set_time_limit(200); // seconds
 ini_set('max_execution_time',200); // solves timeouts on some hosting accounts
 
-$auth_user = 'YOUR-HOSTING-ACCOUNT-cpanel-whm-username' ; 
-$auth_pass = 'YOUR-HOSTING-ACCOUNT-cpanel-whm-password' ; 
+$auth_user = //'YOUR-HOSTING-ACCOUNT-cpanel-whm-username' ; 
+$auth_pass = //'YOUR-HOSTING-ACCOUNT-cpanel-whm-password' ; 
+
+
+
 $cpaneluser = $auth_user; 
 $cpanelpwd = $auth_pass; 
 
@@ -272,7 +282,7 @@ $counter=$counter+1;
 
  print"<br> Domains processed: " .$counter;
  print "<br> Successfully: " .$goodcounter;
- print "<br> as opposed to Not-Successfully ( please check dashboard to visualise discrepancies ): " .$badcounter;
+ print "<br> as opposed to Not-Successfully: " .$badcounter;
  print "<br>end";
 
  
@@ -281,31 +291,63 @@ $counter=$counter+1;
 
 else {
     
+$domains = $_POST["domainlist"]; // ARRAY ! 
         
     // Handle non-cpanel publishing requests
       
-    
-    // todo 
-    
-    // please checkback soon on our repository 
-    
-    
-    // https://github.com/domainoverflow/diy-domaining-challenge
-    
-}
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+   // get additional params 
+$apiurl = $_POST["apiurl"]; 
+$customapi = $_POST["customapi"]; 
+$apitoken = $_POST["apitoken"]; 
+$customfield = $_POST["customfield"];  
+ $url = $apiurl;
 
+ // this is where you can custom the request ... 
+ 
+$data = array(
+  'token' => $apirequest,
+  'json' => $domains, // array ! 
+  'apitoken' => $apitoken, 
+  'customfield' => $customfield,
+  'url' => $apiurl,
+  'additional' => $customfield     
+);
+
+
+foreach($data as $key=>$value) { $content .= $key.'='.$value.'&'; }
+
+
+// Instead of using curl 
+// I'd suggest using 
+// Unirequest 
+// The below post is using php only for your convenience but a requests library is a must
+// ( consider that you will probably be doing SSL requests )
+
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_HEADER, false);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $content);
+
+$json_response = curl_exec($curl);
+
+$status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+
+curl_close($curl);
+
+$response = json_decode($json_response, true);
+
+var_dump($response); // this should appear in the browser, if not inspect
+                     // right-click the mouse 
+                     // within Chrome 
+                     // inspect .. network .. double click the request and see the response column
+                     
+                      // https://github.com/domainoverflow/diy-domaining-challenge
+} // if ELSE ( not cpanel envs ) 
+
+
+
+    
 function CreateAddonDomain (   $newdomain, $rootdomain, $config, $json_client ) 
 
 {
@@ -850,5 +892,6 @@ $dbresults = $db -> selectAll("vipconfig") ;
    }
 
 ?>
+
 
 

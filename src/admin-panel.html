@@ -2,7 +2,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>DIY Domain Marketplace Admin Dashboard</title>
-
+   
+    <script src="js/jquery3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ddslick.min.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+    
+      <script src="js/sweetalert2.min.js"></script>
+   
+ 
+    
+     
+     
+       
 </head>
 
 
@@ -15,7 +27,7 @@ PART IV: Admin dashboard 
   <div class="blk1">
     <form class="form"  
 	method="post" action ="add-gateway.php"
-	
+	id="form1" name="form1"
 	
 	>
       <div class="form-group">
@@ -41,24 +53,36 @@ PART IV: Admin dashboard 
 <option value="api">API Based, via POST</option>
 <option value="dotbossapi">REST API Based, via Dotboss.Digital</option></select>
 
+<div class="form-group">
 
+ <br>     <label class="label">Server:</label><input required class="input" id="serverip" name="serverip"  placeholder="IP or localhost"/>
+ <br>     <label class="label">Auth user:</label><input required class="input" id="authuser" name="authuser"  placeholder="cpanel or post user"/>
+ <br>     <label class="label">Auth password:</label><input required class="input" id="authpassword" name="authpassword"  placeholder=""/>
+  <br>    <label class="label">REST API URL</label><input class="input" id="apiurl" name="apiurl"  placeholder="ex:https://dotboss.digital/extAPI/publish/sld.tld"/>
+ <br>     <label class="label"></label>Custom POST receiver:<input class="input" id="customapi" name="customapi"  placeholder="ex:https://sld.tld/receive-post.php"/>
+ <br>     <label class="label">API or POST token/credential:</label><input class="input" id="apitoken" name="apitoken"  placeholder=""/>
+ <br>     <label class="label">Custom field:</label><input class="input" id="customfield" name="customfield"  placeholder=""/>
+      
+      
+    
+   
 
       
-
+</div>
 </div>
 
       <br/>
       <div class="form-group">
         <label class="label">Please choose template</label>
-        <select required class="select"><option>- Please choose template -</option>
+        <select required class="select"><option>Please choose template -</option>
 		<option value="1">Template from PART II, of this series</option></select>
       </div>
       <div class="form-group">
       </div>
       <br/>
-      <div class="form-group">
-        <button class="button" name="submit" type="submit">Click here to publish marketplace</button>
-      </div>
+  <div style="text-align:center">
+        <button class="button" name="submitbutton" type="submit">Click here to publish marketplace</button>
+     </div>
     </form>
   </div>
 </div>
@@ -75,6 +99,52 @@ function PreValidation () {
 
 
 }
+
+
+function gateway () {
+    
+    var sel = document.getElementById("chosengateway");
+var chosentext= sel.options[sel.selectedIndex].text;
+    
+    
+ var publisher=  swal({
+  title: 'Please enter credentials',
+  html: 'Gateway chosen:<br><b>'+chosentext+'</b><br>'+
+  '<br><br>Server:<input  name="serverip" id="serverip" placeholder="IP or localhost">'+     
+  '<br><br>Auth User:<input  name="authuser" id="authuser" placeholder="cpanel or post user">'+
+  '<br><br>Auth Password:<input  name="authpwd" id="authpwd" placeholder="password">'+
+  '<br><br>REST API URL:<input  name="apiurl" id="apiurl" placeholder="ex:https://dotboss.digital/extAPI/publish/sld.tld">'+
+  '<br><br>Custom POST receiver:<input  name="customapi" id="customapi" placeholder="ex:https://sld.tld/receive-post.php">'+
+  '<br><br>API or POST token/credential:<input  name="apitoken" id="apitoken">'+
+  '<br><br>Custom Field:<input  name="customfield" id="customfield" placeholder="">'+
+  '<br><br><input type="submit" id="submitbutton" name="submitbutton" value="Submit" form="form1">',
+ 
+  focusConfirm: false,
+  preConfirm: () => {
+    return [
+      $('#serverip').val(),$('#authuser').val(), $('#authpwd').val(),$('#apiurl').val(),
+      $('#customapi').val(),$('#apitoken').val(), $('#customfield').val(),
+    ]
+  }
+})
+
+if (publisher) {
+    
+    document.forms["form1"].submit();
+
+    
+    
+  swal(JSON.stringify(formValues))
+}
+    
+    
+    
+}
+
+
+
+
+
 
 </script>
 
@@ -134,3 +204,4 @@ function PreValidation () {
     margin-left:0px;
   }
 </style>
+
