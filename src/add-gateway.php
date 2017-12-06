@@ -12,7 +12,12 @@
 
 // one OR more domain(s) derived from a textbox on the client-browser side
 // textarea id = domainlist
- 
+
+// it also identifies the meant gateway
+// by receiving the chosengateway value ( drop down select in the admin dashboard page ) 
+
+// our github repo is at: 
+// https://github.com/domainoverflow/diy-domaining-challenge
 
 include 'xmlapi.php'; // Cpanel WHM Library for API 2 
 
@@ -21,7 +26,7 @@ include 'xmlapi.php'; // Cpanel WHM Library for API 2
   
  #AddDomain  
  
-
+FileWriteArray ('partiv.debug', $_POST ) ; 
 FileWriteArray ( 'addrequest.domains', $sldtld  ) ; // temp persist the input
 
 
