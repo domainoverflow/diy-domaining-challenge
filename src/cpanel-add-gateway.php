@@ -280,18 +280,7 @@ $counter=$counter+1;
  print "<br> as opposed to Not-Successfully ( please check dashboard to visualise discrepancies ): " .$badcounter;
  print "<br>end";
 
-// $s = "Success";
-// return $s;
-  
  
- // functions
- 
-//TODO wipe \n from input file batchdata.txt
- 
- 
- 
- 
-// } // while a==1; 
  
  
 
@@ -310,8 +299,6 @@ $subdomain = str_replace (".", "", $newdomain) ;
         
 $json_client->password_auth($auth_user, $auth_pass);
   
-print_r($json_client); 
-//TODO remove pwd printout
  
 
  
@@ -355,6 +342,8 @@ print "<br> newdomain is:" . $newdomain ;
     
 //dir will be equal subdomain minus dot root domain
 
+// cpanel is very confusing 
+
 
  $dir = $newdomain . '/';
  $dir = str_replace (".","-",$dir ) ;
@@ -369,7 +358,8 @@ print "<br> newdomain is:" . $newdomain ;
     
 
 
- print "<br> <b>working ...  </b>";
+ print "<br> <b>working ...  </b>"; // please eliminate this 
+                                // accordingly after refactoring this code
         
         
 
@@ -838,3 +828,4 @@ $dbresults = $db -> selectAll("vipconfig") ;
    }
 
 ?>
+
