@@ -1,32 +1,22 @@
-<?php
-
-// DomainOverflow.com
-// 06-Dec-2017 
-// Part IV 2/2 ( of X parts )
-// The Server side logic for the admin panel 
-// article at
-//https://domainoverflow.com/index.php/2017/11/26/diy-domain-marketplace-series-part-iv-designing-admin-dashboard-bulk-template-publisher///
- 
-//
-// this file handles: 
-
-// one OR more domain(s) derived from a textbox on the client-browser side
-// textarea id = domainlist
-
-// it also identifies the meant gateway
-// by receiving the chosengateway value ( drop down select in the admin dashboard page ) 
-
-// our github repo is at: 
-// https://github.com/domainoverflow/diy-domaining-challenge
-
-include 'xmlapi.php'; // Cpanel WHM Library for API 2 
+nclude 'xmlapi.php'; // Cpanel WHM Library for API 2 
 
 
  ini_set('max_execution_time', 300); //300 seconds = 5 minutes
   
  #AddDomain  
  
-FileWriteArray ('partiv.debug', $_POST ) ; 
+$domains = $_POST["domainlist"]; 
+$chosengateway = $_POST["chosengateway"]; 
+$marketplacename = $_POST["marketplacename"]; 
+
+
+if ($chosengateway=="cpanel") {
+    
+print_r($domains);
+echo $chosengateway; 
+echo $marketplacename; 
+
+
 FileWriteArray ( 'addrequest.domains', $sldtld  ) ; // temp persist the input
 
 
@@ -285,6 +275,33 @@ $counter=$counter+1;
  print "<br> as opposed to Not-Successfully ( please check dashboard to visualise discrepancies ): " .$badcounter;
  print "<br>end";
 
+ 
+ 
+}  // gateway if 
+
+else {
+    
+        
+    // Handle non-cpanel publishing requests
+      
+    
+    // todo 
+    
+    // please checkback soon on our repository 
+    
+    
+    // https://github.com/domainoverflow/diy-domaining-challenge
+    
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -833,4 +850,5 @@ $dbresults = $db -> selectAll("vipconfig") ;
    }
 
 ?>
+
 
