@@ -14,7 +14,7 @@ PART IV: Admin dashboard 
 <div class="blk-row">
   <div class="blk1">
     <form class="form" onSubmit="return PreValidation()" 
-	method="post" action ="cpanel-add-gateway.php"
+	method="post" action ="add-gateway.php"
 	
 	
 	>
@@ -31,10 +31,26 @@ PART IV: Admin dashboard 
         <label class="label">Marketplace name:</label>
         <input required class="input"   placeholder="Please enter marketplace name"/>
       </div>
+<div class="form-group">
+        <label class="label">Publishing Gateway</label>
+ <select required id ="chosengateway" class="select"><option>- Please choose publishing method </option>
+                <option value="cpanel">Cpanel based hosting account</option>
+<option value="noncpanel">Cloud based or non-cloud, without cpanel, with Apache webserver</option>
+<option value="cloudbasedwithcpanel">Cloud based, with cpanel (why would you do this ?)</option>
+<option value="localwindows">Local windows or linux, using wamp or alike</option>
+<option value="api">API Based, via POST</option>
+<option value="dotbossapi">REST API Based, via Dotboss.Digital</option></select>
+
+
+
+      
+
+</div>
+
       <br/>
       <div class="form-group">
         <label class="label">Please choose template</label>
-        <select requirede class="select"><option>- Please choose template -</option>
+        <select required class="select"><option>- Please choose template -</option>
 		<option value="1">Template from PART II, of this series</option></select>
       </div>
       <div class="form-group">
