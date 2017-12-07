@@ -8,7 +8,7 @@
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/buynow.png?ssl=1)<br>
 <b>Get notified, no middle entities !</b>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/11/counter-2.png?ssl=1)<br>
-<b>Bulk Domain Adder (includes cpanel-based hosting accounts )<b><br>
+<b>Bulk Domain Adder (includes cpanel-based hosting accounts )</b><br>
 <b>Assign & Publish Template(s) to Domain(s) in bulk</b>         
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/enhancedadmin-3.png?ssl=1)<br>
 <b>Easy Bulk Publishing</b>
