@@ -6,12 +6,11 @@
 ![Multi Lander](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/part3-final-1.png?ssl=1)
 <b>Multi use Lander(s)</b>
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/buynow.png?ssl=1)<br>
-<b>Get notified, no middle entities !</b>
+<b>Auto-Paypal and Get notified, no middle entities ! </b><br>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/11/counter-2.png?ssl=1)<br>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/enhancedadmin-3.png?ssl=1)<br>
 <b>Easy Bulk Publishing</b>
-![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/supportedgateways.png?ssl=1)
-<br>
+![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/supportedgateways.png?ssl=1)<br>
 <b>Working features so far:</b><br>
 
 -Ability to use a generic template that looks custom ( it knows its own name ).<br>
@@ -26,7 +25,7 @@
 
 
 -Real time stats from webserver (apache or nginx).<br> 
--Full International Domain Names ( IDNs, punycode, unicode ) support :es::it::cn::ru::fr::gb::de::us: and more+<br>
+-Full International Domain Names ( IDNs, punycode, unicode ) support :es::it::cn::ru::fr::gb::de::us::jp::cn: and more+<br>
 -Bulk subdomain creation ( including cpanel-based and direct stacks ).<br>
 -Auto Expiration date fetcher for all .tlds ( including the new ones ).<br>
 -Bulk price editing. <br>
