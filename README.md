@@ -39,7 +39,7 @@ Simply git clone the project and upload src/ folder to your server or local env 
 
 <b>Live Demos</b><br>
 <a href="https://domainoverflow.com/examples/final-part3.php" target="_blank">Landing Page Demo</a><br>
-<br><a href="contato.link" target="_blank">Checkout/POS Page Demo</a><br>
+<br><a href="https://contato.link" target="_blank">Checkout/POS Page Demo</a><br>
 <br><a href="https://domainoverflow.com/partIV/diy-domaining-challenge/src/admin-panel.html" target="_blank">Admin-dashboard demo</a><br>
 <br><b>Stop paying for domain auctions!</br>
 <br>
