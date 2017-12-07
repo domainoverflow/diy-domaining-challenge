@@ -16,7 +16,7 @@
 
 <b>Working features so far:</b><br>
 
--Ability to use a generic template that looks custom ( it knows its own name ).[:unlock:]<br>
+-Ability to use a generic template that looks custom ( it knows its own name ).<br>
 -Bulk Domain ( "addondomain" ) Adder for cpanel-based hosting accounts.<br>
 -Smart Checkout page/POS with auto-paypal, Counter-offer, Contact and BuyNow.<br>
 -Supports cpanel-based hosting accounts to add and to publish.<br>
@@ -26,12 +26,13 @@
 
 
 -Real time stats from webserver (apache or nginx).<br> 
+-Full International Domain Names ( IDNs, punycode, unicode ) support :es::it::cn::ru::fr::gb::de::us: and more+<br>
 -Bulk subdomain creation ( including cpanel-based and direct stacks ).<br>
 -Auto Expiration date fetcher for all .tlds ( including the new ones ).<br>
--Bulk price editing.<br>
+-Bulk price editing. <br>
 -Precise geo location of every hit across your digital market.<br>
 -Auto Keyword fetching.<br>
--Monitoring dashboard.<br>
+-Monitoring dashboard. :eyes: <br>
 -CSS Grid templating.<br>
 <b>-.... You tell us or start contributing today, fork it!</b>
 
@@ -68,11 +69,6 @@ target="_blank"> DOMAINING DIY CHALLENGE Part II: Creating a proper checkout pag
   
   
 <br><br>
-![alt text](http://octodex.github.com/images/dojocat.jpg)<br>
+ 
 ![alt_text](https://i2.wp.com/domainoverflow.com/wp-content/uploads/2017/11/checkout-buttons.png?ssl=1)<br>
-
-:eyes:
-
-
-
-
+ 
