@@ -8,12 +8,10 @@
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/buynow.png?ssl=1)<br>
 <b>Get notified, no middle entities !</b>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/11/counter-2.png?ssl=1)<br>
-<b>Bulk Domain Adder (includes cpanel-based hosting accounts )</b><br>
-<b>Assign & Publish Template(s) to Domain(s) in bulk</b>         
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/enhancedadmin-3.png?ssl=1)<br>
 <b>Easy Bulk Publishing</b>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/supportedgateways.png?ssl=1)
-
+<br>
 <b>Working features so far:</b><br>
 
 -Ability to use a generic template that looks custom ( it knows its own name ).<br>
@@ -21,6 +19,8 @@
 -Smart Checkout page/POS with auto-paypal, Counter-offer, Contact and BuyNow.<br>
 -Supports cpanel-based hosting accounts to add and to publish.<br>
 -Supports any linux stack, cloud or not, without cpanel but running Apache or Nginx.<br>
+<b>Bulk Domain Adder (includes cpanel-based hosting accounts )</b><br>
+<b>Assign & Publish Template(s) to Domain(s) in bulk</b>         <br>
 
 <b>Upcoming features</b><br>
 
