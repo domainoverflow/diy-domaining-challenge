@@ -16,7 +16,7 @@
 
 <b>Working features so far:</b><br>
 
--Ability to use a generic template that looks custom ( it knows its own name ).<br>
+-Ability to use a generic template that looks custom ( it knows its own name ).[:unlock:]<br>
 -Bulk Domain ( "addondomain" ) Adder for cpanel-based hosting accounts.<br>
 -Smart Checkout page/POS with auto-paypal, Counter-offer, Contact and BuyNow.<br>
 -Supports cpanel-based hosting accounts to add and to publish.<br>
@@ -24,7 +24,8 @@
 
 <b>Upcoming features</b><br>
 
--Real time stats from webserver (apache or nginx).<br>
+
+-Real time stats from webserver (apache or nginx).<br> 
 -Bulk subdomain creation ( including cpanel-based and direct stacks ).<br>
 -Auto Expiration date fetcher for all .tlds ( including the new ones ).<br>
 -Bulk price editing.<br>
@@ -37,8 +38,8 @@
 <b>To Install:</b> 
 Simply git clone the project and upload src/ folder to your server or local env and open index.html with a browser.
 
-<b>Live Demos</b><br>
-<a href="https://domainoverflow.com/examples/final-part3.php" target="_blank">Landing Page Demo</a><br>
+<em>Live Demos</em><br>
+<br><a href="https://domainoverflow.com/examples/final-part3.php" target="_blank">Landing Page Demo</a><br>
 <br><a href="https://contato.link" target="_blank">Checkout/POS Page Demo</a><br>
 <br><a href="https://domainoverflow.com/partIV/diy-domaining-challenge/src/admin-panel.html" target="_blank">Admin-dashboard demo</a><br>
 <br><b>Stop paying for domain auctions!</br>
@@ -66,5 +67,12 @@ target="_blank"> DOMAINING DIY CHALLENGE Part II: Creating a proper checkout pag
   <a href="https://domainoverflow.com/index.php/2017/12/06/diy-domaining-marketplace-series-part-iv-2-2-designing-admin-dashboard-bulk-template-publisher/" target="_blank">  DOMAINING DIY CHALLENGE Part  IV 2/2: The Admin panel.Cpanel Bulk Domain Adder</a><br>
   
   
-<br><br><br><br>
-![alt_text](https://i2.wp.com/domainoverflow.com/wp-content/uploads/2017/11/checkout-buttons.png?ssl=1)
+<br><br>
+![alt text](http://octodex.github.com/images/dojocat.jpg)<br>
+![alt_text](https://i2.wp.com/domainoverflow.com/wp-content/uploads/2017/11/checkout-buttons.png?ssl=1)<br>
+
+:eyes:
+
+
+
+
