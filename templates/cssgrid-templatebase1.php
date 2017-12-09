@@ -27,10 +27,10 @@ grid-template-rows:
                  auto;}
                  
                  
-#title {grid-column:1 / span 2;grid-row:1;background-color:pink;}
-#domain-name {grid-column:1 ; grid-row:2;background-color:yellow;}
-#message1 {grid-column:1 ; grid-row:3;background-color:blue;}
-#message2 {grid-column:1 ; grid-row:4;background-color:blue;}
+#title {grid-column:1 / span 2;grid-row:1;background-color:magenta;}
+#domain-name {grid-column:1 ; grid-row:2;background-color:blue;}
+#message1 {grid-column:1 ; grid-row:3;background-color:darkblue;}
+#message2 {grid-column:1 ; grid-row:4;background-color:darkblue;}
 
 #domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:red; }
 
@@ -57,12 +57,12 @@ grid-template-rows:
 
 
 <div id ="grid">
-    <div id="title">Title</div>
-    <div id="domain-name">SLD.TLD</div>
-    <div id="domain-image">domain-image</div>
-    <div id="message1">message1</div>
-    <div id="message2">message2</div>
-    <div id="checkoutpage-link">POS Link</div>
+    <div id="title">.title</div>
+    <div id="domain-name">.domain-name</div>
+    <div id="domain-image">.domain-image</div>
+    <div id="message1">.message1</div>
+    <div id="message2">.message2</div>
+    <div id="checkoutpage-link">.POS-link</div>
 </div>
 
 
