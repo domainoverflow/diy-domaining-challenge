@@ -28,8 +28,8 @@ grid-template-rows:
                  auto;}
                  
                  
-#title {grid-column:1 / span 2;grid-row:1;background-color:pink;}
-#domain-name {grid-column:1 ; grid-row:2;background-color:yellow;}
+#title {grid-column:1 / span 2;grid-row:1;background-color:green;}
+#domain-name {grid-column:1 ; grid-row:2;background-color:magenta;}
 #message1 {grid-column:1 ; grid-row:3;background-color:blue;}
 #checkoutpage-link {grid-column:1 ; grid-row:4;background-color:purple;}
 
