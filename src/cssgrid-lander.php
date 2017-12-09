@@ -32,11 +32,12 @@ grid-template-rows:
 #message1 {grid-column:1 ; grid-row:3;background-color:blue;}
 #message2 {grid-column:1 ; grid-row:4;background-color:blue;}
 
-#domain-image {grid-column: 2 ; grid-row: 2 / span 4; background-color:red;}
+#domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:red; }
+
 #checkoutpage-link {grid-column:1 / span 2; grid-row:5;background-color:purple;}
 
 
-#grid > div {color:white; text-align:center;font-size:2vw;  
+#grid > div {color:white; text-align:center;font-size:2vw;  font-size: 2vw;
   border: 1px solid #171717; width:100%; height:100% }
 /*background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);} */
 
