@@ -1,4 +1,5 @@
 <?php
+
   
 ?>
 
@@ -17,24 +18,24 @@
         background-color: #white;
 
 grid-template-columns: 
-    /* 1  2 */  400px 1fr;
+    /* 1  2 */  420px 1fr;
     
 grid-template-rows: 
                  auto
                  auto
-                 250px
-                 250px
+                 270px
+                 270px
                  auto;}
                  
                  
-#title {grid-column:1 / span 2;grid-row:1;background-color:magenta;}
-#domain-name {grid-column:1 ; grid-row:2;background-color:blue;}
-#message1 {grid-column:1 ; grid-row:3;background-color:darkblue;}
-#message2 {grid-column:1 ; grid-row:4;background-color:darkblue;}
+#title {grid-column:1 / span 2;grid-row:1;background-color:pink;}
+#domain-name {grid-column:1 ; grid-row:2;background-color:yellow;}
+#message1 {grid-column:1 ; grid-row:3;background-color:blue;}
+#checkoutpage-link {grid-column:1 ; grid-row:4;background-color:purple;}
 
 #domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:red; }
 
-#checkoutpage-link {grid-column:1 / span 2; grid-row:5;background-color:purple;}
+#message2 {grid-column:1 / span 2; grid-row:5;background-color:blue;}
 
 
 #grid > div {color:white; text-align:center;font-size:2vw;  font-size: 2vw;
@@ -57,12 +58,12 @@ grid-template-rows:
 
 
 <div id ="grid">
-    <div id="title">.title</div>
-    <div id="domain-name">.domain-name</div>
-    <div id="domain-image">.domain-image</div>
-    <div id="message1">.message1</div>
-    <div id="message2">.message2</div>
-    <div id="checkoutpage-link">.POS-link</div>
+    <div id="title">Title</div>
+    <div id="domain-name">SLD.TLD</div>
+    <div id="domain-image">domain-image</div>
+    <div id="message1">message1</div>
+    <div id="checkoutpage-link">POS Link</div>
+    <div id="message2">message2</div>
 </div>
 
 
