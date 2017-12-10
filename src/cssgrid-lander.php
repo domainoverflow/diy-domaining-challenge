@@ -6,6 +6,13 @@
 
 
 <header>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
 </header>
 
 <style>
@@ -17,24 +24,24 @@
         background-color: #white;
 
 grid-template-columns: 
-    /* 1  2 */  400px 1fr;
+    /* 1  2 */  420px 1fr;
     
 grid-template-rows: 
                  auto
                  auto
-                 250px
-                 250px
+                 270px
+                 270px
                  auto;}
                  
                  
-#title {grid-column:1 / span 2;grid-row:1;background-color:pink;}
-#domain-name {grid-column:1 ; grid-row:2;background-color:yellow;}
+#title {grid-column:1 / span 2;grid-row:1;background-color:purple;}
+#domain-name {grid-column:1 ; grid-row:2;background-color:magenta;}
 #message1 {grid-column:1 ; grid-row:3;background-color:blue;}
-#message2 {grid-column:1 ; grid-row:4;background-color:blue;}
+#checkoutpage-link {grid-column:1 ; grid-row:4;background-color:orange;}
 
-#domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:red; }
+#domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:green; }
 
-#checkoutpage-link {grid-column:1 / span 2; grid-row:5;background-color:purple;}
+#message2 {grid-column:1 / span 2; grid-row:5;background-color:blue;}
 
 
 #grid > div {color:white; text-align:center;font-size:2vw;  font-size: 2vw;
@@ -57,12 +64,12 @@ grid-template-rows:
 
 
 <div id ="grid">
-    <div id="title">Title</div>
-    <div id="domain-name">SLD.TLD</div>
-    <div id="domain-image">domain-image</div>
-    <div id="message1">message1</div>
-    <div id="message2">message2</div>
-    <div id="checkoutpage-link">POS Link</div>
+    <div id="title">.title</div>
+    <div id="domain-name">.domain-name</div>
+    <div id="domain-image">.domain-image</div>
+    <div id="message1">.message1</div>
+    <div id="checkoutpage-link">.POS-Link</div>
+    <div id="message2">.message2</div>
 </div>
 
 
@@ -76,12 +83,110 @@ grid-template-rows:
 
 
 
+<script>
+var domainarray=[];
+
+function Snippets() {
+ /*   
+// myElement = document.querySelector("#domain-name");
+    
+  // document.getElementById('id').style.width = value;  
+    
+  var myElements = document.querySelectorAll(".bar");
+
+for (var i = 0; i < myElements.length; i++) {
+    myElements[i].style.opacity = 0;
+}  
+    
+ 
+
+ document.getElementById("p2").style.color="blue";
+var element = document.createElement('select');
+element.style.width = "100px";
+
+ 
+
+
+    
+   */
+   
+   
+  
+   
+    
+    
+}
+
+  var domaininventory = 'https://e.ventures/public_html/partV/diy-domaining-challenge/src/domainsdb.json';
+  
+    // load json 
+   
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+      GetDomains() ; 
+    console.log(domainarray); 
+    
+    
+    // GET // what is my underlying current domain name ( lander's )
+    
+    // create array with domain , css ID , property1 , property2
+    
+    
+    // json format    
+    
+    // .domain-name
+    
+    // message1
+    
+    // message2
+    
+    //pos-link 
+    
+    //domain-name
+    
+});
+
+  
+                 
+      
+       
+
+function GetDomains () {
+    
+
+
+    
+    var http = new XMLHttpRequest();
+var url = "router.php";
+var params="request=domain-inventory";
+http.open("POST", url, true);
+http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        
+        domainarray = JSON.parse(http.responseText); 
+        console.log(domainarray);
+        
+       //; if (domainarray[0]["domain"]="notfound") 
+        
+                
+      
+        //console.log(http.responseText);
+       
+    }
+}
+http.send(params);
+   
+    
+    
+    
+}
 
 
 
-
-
-
+</script>
 
 
 </html>
