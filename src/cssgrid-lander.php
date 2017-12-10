@@ -118,7 +118,13 @@ element.style.width = "100px";
 }
 
   var domaininventory = 'https://e.ventures/public_html/partV/diy-domaining-challenge/src/domainsdb.json';
-  
+  var sldtld="tbd";  ;
+  var  domainname="sld.tld"; 
+  var message1=""; 
+  var message2="";
+  var poslink = "https://contato.link"; 
+  var domainimage ="tbd"; 
+  var uppertitle = "tbd"; 
     // load json 
    
 
@@ -128,10 +134,8 @@ $( document ).ready(function() {
     console.log(domainarray); 
     
     
-    // GET // what is my underlying current domain name ( lander's )
     
-    // create array with domain , css ID , property1 , property2
-    
+        
     
     // json format    
     
@@ -155,7 +159,7 @@ $( document ).ready(function() {
 function GetDomains () {
     
 
-
+var delimiter = "|";
     
     var http = new XMLHttpRequest();
 var url = "router.php";
@@ -168,7 +172,27 @@ http.onreadystatechange = function() {//Call a function when the state changes.
         
         domainarray = JSON.parse(http.responseText); 
         console.log(domainarray);
+        if (domainarray["domain"]=="notfound"){console.log("domain not found. please check json file");}
         
+        
+        console.log(domainarray["domain"]); 
+                 sldtld = domainarray["domain"]; 
+     console.log(sldtld);
+         
+   
+   
+        
+        
+             domainname = sldtld;
+       message1=domainarray["message1"]; 
+    message2=domainarray["message2"]; 
+    poslink = domainarray["poslink"]; 
+    domainimage = domainarray["domainimage"];
+ 
+ 
+    
+    console.log("vars:"+message1+delimiter+message2+delimiter+poslink+delimiter+domainname+delimiter+domainimage);
+     
        //; if (domainarray[0]["domain"]="notfound") 
         
                 
