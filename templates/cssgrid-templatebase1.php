@@ -1,5 +1,6 @@
 <?php
 
+
   
 ?>
 
@@ -28,12 +29,12 @@ grid-template-rows:
                  auto;}
                  
                  
-#title {grid-column:1 / span 2;grid-row:1;background-color:green;}
+#title {grid-column:1 / span 2;grid-row:1;background-color:purple;}
 #domain-name {grid-column:1 ; grid-row:2;background-color:magenta;}
 #message1 {grid-column:1 ; grid-row:3;background-color:blue;}
-#checkoutpage-link {grid-column:1 ; grid-row:4;background-color:purple;}
+#checkoutpage-link {grid-column:1 ; grid-row:4;background-color:orange;}
 
-#domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:red; }
+#domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:green; }
 
 #message2 {grid-column:1 / span 2; grid-row:5;background-color:blue;}
 
@@ -58,12 +59,12 @@ grid-template-rows:
 
 
 <div id ="grid">
-    <div id="title">Title</div>
-    <div id="domain-name">SLD.TLD</div>
-    <div id="domain-image">domain-image</div>
-    <div id="message1">message1</div>
-    <div id="checkoutpage-link">POS Link</div>
-    <div id="message2">message2</div>
+    <div id="title">.title</div>
+    <div id="domain-name">.domain-name</div>
+    <div id="domain-image">.domain-image</div>
+    <div id="message1">.message1</div>
+    <div id="checkoutpage-link">.POS-Link</div>
+    <div id="message2">.message2</div>
 </div>
 
 
