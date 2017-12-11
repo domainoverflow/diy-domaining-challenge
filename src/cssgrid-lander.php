@@ -53,15 +53,26 @@ grid-template-rows:
   align-items: center;}
   
   
-  #domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:green;
-  /*background-image:url('andservices.png'); */
+  #domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:white;
+  /*background-image:url('andservices.png');
   background-repeat: no-repeat; 
   width=100%; height=100%; 
   background-position: center ; 
-  background-size: auto;
+  background-size: auto; */
+    }
+  
+  #imageslot {grid-column:2 ; grid-row:2 / span 3;background-color:white;
+  
+
+  background-repeat: no-repeat; 
+  width:100%; height: 100%;
+  background-size: contain; 
+  background-position: center; 
+  object-fit: cover;
   
   
   
+
   
  
  
@@ -89,7 +100,7 @@ grid-template-rows:
 <div id ="grid">
     <div id="title">.title</div>
     <div id="domain-name">.domain-name</div>
-    <div id="domain-image">.</div>
+    <div id="domain-image"><img id="imageslot"    /> </div>
     <!-- <img id="imageslot" src = "andservices.png" alt="image"  />  !-->
     <div id="message1">.message1</div>
     <div id="checkoutpage-link">.POS-Link</div>
@@ -258,12 +269,12 @@ function UpdateTemplate () {
     message2element.innerHTML = message2; 
       poselement.innerHTML = poslink; 
     uppertitleelement.innerHTML = uppertitle; 
-       document.getElementById('domain-image').style.backgroundImage = "url('"+domainimage+"')";
-       document.getElementById('domain-image').style.backgroundSize="auto";
-               document.getElementById('domain-image').style.height="100%"; 
-         document.getElementById('domain-image').style.width="100%"; 
-       document.getElementById('domain-image').style.backgroundRepeat= "no-repeat"; 
-       document.getElementById('domain-image').style.backgroundPosition = "center"; 
+       document.getElementById('imageslot').style.backgroundImage = "url('"+domainimage+"')";
+    //   document.getElementById('domain-image').style.backgroundSize="auto";
+      //         document.getElementById('domain-image').style.height="100%"; 
+     //    document.getElementById('domain-image').style.width="100%"; 
+     //  document.getElementById('domain-image').style.backgroundRepeat= "no-repeat"; 
+    //   document.getElementById('domain-image').style.backgroundPosition = "center"; 
        
        
  /*   
