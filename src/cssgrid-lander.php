@@ -270,10 +270,14 @@ function UpdateTemplate () {
       poselement.innerHTML = poslink; 
     uppertitleelement.innerHTML = uppertitle; 
        document.getElementById('imageslot').style.backgroundImage = "url('"+domainimage+"')";
+       domainimageelement.style.backgroundColor="black"; 
+                document.getElementById('imageslot').style.backgroundRepeat= "no-repeat"; 
+                            document.getElementById('imageslot').style.backgroundSize ="100%"; 
+
     //   document.getElementById('domain-image').style.backgroundSize="auto";
       //         document.getElementById('domain-image').style.height="100%"; 
      //    document.getElementById('domain-image').style.width="100%"; 
-     //  document.getElementById('domain-image').style.backgroundRepeat= "no-repeat"; 
+      document.getElementById('domain-image').style.backgroundRepeat= "no-repeat"; 
     //   document.getElementById('domain-image').style.backgroundPosition = "center"; 
        
        
