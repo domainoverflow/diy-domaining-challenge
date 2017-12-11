@@ -22,6 +22,7 @@
         justify-content: center;
         align-items: center;
         background-color: #white;
+          
 
 grid-template-columns: 
     /* 1  2 */  420px 1fr;
@@ -37,7 +38,9 @@ grid-template-rows:
 #title {grid-column:1 / span 2;grid-row:1;background-color:purple;}
 #domain-name {grid-column:1 ; grid-row:2;background-color:magenta;}
 #message1 {grid-column:1 ; grid-row:3;background-color:blue;}
-#checkoutpage-link {grid-column:1 ; grid-row:4;background-color:orange;}
+#checkoutpage-link {grid-column:1 ; grid-row:4;background-color:orange;     display: flex;
+  justify-content: center;
+  align-items: center;}
 
 #domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:green; }
 
@@ -45,7 +48,9 @@ grid-template-rows:
 
 
 #grid > div {color:white; text-align:center;font-size:2vw;  font-size: 2vw;
-  border: 1px solid #171717; width:100%; height:100% }
+  border: 1px solid #171717; width:100%; height:100% ;display: flex;
+  justify-content: center;
+  align-items: center;}
 /*background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);} */
 
 /*
@@ -159,7 +164,7 @@ $( document ).ready(function() {
 function GetDomains () {
     
 
-var delimiter = "|";
+
     
     var http = new XMLHttpRequest();
 var url = "router.php";
@@ -179,21 +184,24 @@ http.onreadystatechange = function() {//Call a function when the state changes.
                  sldtld = domainarray["domain"]; 
      console.log(sldtld);
          
-   
+ 
    
         
         
              domainname = sldtld;
        message1=domainarray["message1"]; 
     message2=domainarray["message2"]; 
-    poslink = domainarray["poslink"]; 
-    domainimage = domainarray["domainimage"];
- 
- 
+    poslink = domainarray["pos-link"]; 
+    domainimage = domainarray["domain-image"];
+   uppertitle = domainarray["title"]; 
+   
+ var delimiter = "|";
     
-    console.log("vars:"+message1+delimiter+message2+delimiter+poslink+delimiter+domainname+delimiter+domainimage);
+    console.log("vars:"+message1+delimiter+message2+delimiter+poslink+
+    delimiter+domainname+delimiter+domainimage + delimiter+uppertitle);
      
        //; if (domainarray[0]["domain"]="notfound") 
+        UpdateTemplate() ; 
         
                 
       
@@ -208,7 +216,28 @@ http.send(params);
     
 }
 
-
+function UpdateTemplate () {
+     var delimiter = "|";
+    
+    var domainelement = document.querySelector("#domain-name");
+    var poselement = document.querySelector("#checkoutpage-link");
+    var domainimageelement = document.querySelector("#domain-image");
+    var uppertitleelement = document.querySelector("#title");
+    var domainelement = document.querySelector("#domain-name");
+    var message1element = document.querySelector("#message1"); 
+    var message2element = document.querySelector("#message2");
+    poslink = "<a href='"+poslink+"' target='a_blank'>Contact</a>";
+    poselement.innerHTML = poslink; 
+   domainimageelement.innerHTML = domainimage;
+    domainelement.innerHTML = sldtld;
+    message1element.innerHTML = message1;
+    message2element.innerHTML = message2; 
+    document.getElementById('domain-image').innerHTML = domainimage;
+    
+   
+   
+    
+}
 
 </script>
 
