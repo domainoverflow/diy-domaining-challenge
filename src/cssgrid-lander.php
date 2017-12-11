@@ -218,6 +218,7 @@ http.send(params);
 
 function UpdateTemplate () {
      var delimiter = "|";
+
     
     var domainelement = document.querySelector("#domain-name");
     var poselement = document.querySelector("#checkoutpage-link");
@@ -226,13 +227,22 @@ function UpdateTemplate () {
     var domainelement = document.querySelector("#domain-name");
     var message1element = document.querySelector("#message1"); 
     var message2element = document.querySelector("#message2");
-    poslink = "<a href='"+poslink+"' target='a_blank'>Contact</a>";
+         domainimageelement.innerHTML = domainimage;
+   
     poselement.innerHTML = poslink; 
-   domainimageelement.innerHTML = domainimage;
+
+     document.getElementById('domain-image').style.backgroundImage = "https://e.ventures/andservices.png";
+  // domainimageelement.style.backgroundImage =  "url('"+domainimage+"')";
+ //  document.body.style.backgroundImage = "url('img_tree.png')";
     domainelement.innerHTML = sldtld;
     message1element.innerHTML = message1;
     message2element.innerHTML = message2; 
-    document.getElementById('domain-image').innerHTML = domainimage;
+  
+    uppertitleelement.innerHTML = uppertitle; 
+ 
+     
+    console.log("hello"+ domainimage); 
+    
     
    
    

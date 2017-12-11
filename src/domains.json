@@ -1,4 +1,4 @@
-[{"domain": "domain1.com","price": 999,"title":"Welcome!","domain-image":"image1.jpg",
+[{"domain": "domain1.com","price": 999,"title":"Welcome!","domain-image":"andservices.png",
 "message1":"This domain is for sale", "message2":"footer message","pos-link":"https://contato.link"},
-{"domain": "e.ventures","price": 2500,"title":"Welcome!","domain-image":"domain2.jpg",
-"message1":"This domain is for sale", "message2":"All Rights Reserved","pos-link":"https://contato.link"}]
+{"domain": "e.ventures","price": 2500,"title":"Welcome!","domain-image":"andservices.png",
+"message1":"<a href='https://contato.link' style='color:white'>This domain is for sale.</a>", "message2":"All Rights Reserved","pos-link":"<a href='https://contato.link' style='color:white;background-color:green;'>Contact</a>"}]
