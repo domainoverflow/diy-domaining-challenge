@@ -18,7 +18,7 @@
 <style>
 
 #grid { display:grid    ;
-        grid-gap: 2rem; 
+        grid-gap: 0.5rem; 
         justify-content: center;
         align-items: center;
         background-color: #white;
@@ -42,7 +42,7 @@ grid-template-rows:
   justify-content: center;
   align-items: center;}
 
-#domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:green; }
+
 
 #message2 {grid-column:1 / span 2; grid-row:5;background-color:blue;}
 
@@ -51,6 +51,24 @@ grid-template-rows:
   border: 1px solid #171717; width:100%; height:100% ;display: flex;
   justify-content: center;
   align-items: center;}
+  
+  
+  #domain-image {grid-column: 2 ; grid-row: 2 / span 3; color:white; background-color:green;
+  /*background-image:url('andservices.png'); */
+  background-repeat: no-repeat; 
+  width=100%; height=100%; 
+  background-position: center ; 
+  background-size: auto;
+  
+  
+  
+  
+ 
+ 
+
+}
+  
+  
 /*background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);} */
 
 /*
@@ -71,7 +89,8 @@ grid-template-rows:
 <div id ="grid">
     <div id="title">.title</div>
     <div id="domain-name">.domain-name</div>
-    <div id="domain-image">.domain-image</div>
+    <div id="domain-image">.</div>
+    <!-- <img id="imageslot" src = "andservices.png" alt="image"  />  !-->
     <div id="message1">.message1</div>
     <div id="checkoutpage-link">.POS-Link</div>
     <div id="message2">.message2</div>
@@ -227,25 +246,41 @@ function UpdateTemplate () {
     var domainelement = document.querySelector("#domain-name");
     var message1element = document.querySelector("#message1"); 
     var message2element = document.querySelector("#message2");
-         domainimageelement.innerHTML = domainimage;
+        // domainimageelement.innerHTML = domainimage;
    
-    poselement.innerHTML = poslink; 
+   
 
-     document.getElementById('domain-image').style.backgroundImage = "https://e.ventures/andservices.png";
+   
   // domainimageelement.style.backgroundImage =  "url('"+domainimage+"')";
  //  document.body.style.backgroundImage = "url('img_tree.png')";
     domainelement.innerHTML = sldtld;
     message1element.innerHTML = message1;
     message2element.innerHTML = message2; 
-  
+      poselement.innerHTML = poslink; 
     uppertitleelement.innerHTML = uppertitle; 
+       document.getElementById('domain-image').style.backgroundImage = "url('"+domainimage+"')";
+       document.getElementById('domain-image').style.backgroundSize="auto";
+               document.getElementById('domain-image').style.height="100%"; 
+         document.getElementById('domain-image').style.width="100%"; 
+       document.getElementById('domain-image').style.backgroundRepeat= "no-repeat"; 
+       document.getElementById('domain-image').style.backgroundPosition = "center"; 
+       
+       
+ /*   
  
-     
-    console.log("hello"+ domainimage); 
-    
-    
-   
-   
+    background-repeat: no-repeat; 
+  width=100%; height=100%; 
+  background-position: center ; 
+  background-size: auto;
+  
+      
+  
+
+         
+    // background-image: url('/ximages/websiteheader1.png');
+   //background-repeat:no-repeat;
+  // background-size:contain;
+  /// height:200px;width:1200px;*/
     
 }
 
