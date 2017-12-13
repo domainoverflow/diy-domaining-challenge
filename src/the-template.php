@@ -63,26 +63,47 @@ border: 1px solid #171717;
 .domainMedia {grid-area:domainMediaArea;background-color:red;
    border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-
+  width: 100%; max-width:1.5fr; 
+  height:auto; max-height:110%;
+display: flex;
+  align-items: center;
+  justify-content: center;
   }
 
-.message1 {grid-area: message1Area;background-color:#e93418;}
-.message2 {grid-area: message2Area;background-color:#e93418;}
-.posLink {grid-area: posLinkArea;background-color:green;}
+.message1 {grid-area: message1Area;background-color:#e93418;display: flex;
+  align-items: center;
+  justify-content: center;}
+.message2 {grid-area: message2Area;background-color:#e93418;display: flex;
+  align-items: center;
+  justify-content: center;}
+.posLink {grid-area: posLinkArea;background-color:green;display: flex;
+  align-items: center;
+  justify-content: center;}
 
-.mainContent {grid-area: mainContentArea; background-color:blue;}
-.domainName {grid-area: domainNameArea;background-color:orange;}
-.title {grid-area: titleArea;background-color:magenta;}
-.additionalSlot {grid-area: AdditionalSlotArea;background-color:white;color:black;}
-   .extendedContent{grid-area: extendedContentArea;background-color:blue; }
+.mainContent {grid-area: mainContentArea; background-color:blue;display: flex;
+  align-items: center;
+  justify-content: center;}
+.domainName {grid-area: domainNameArea;background-color:orange;display: flex;
+  align-items: center;
+  justify-content: center;}
+.title {grid-area: titleArea;background-color:magenta;display: flex;
+  align-items: center;
+  justify-content: center;}
+.additionalSlot {grid-area: AdditionalSlotArea;background-color:white;color:black;display: flex;
+  align-items: center;
+  justify-content: center;}
+   .extendedContent{grid-area: extendedContentArea;background-color:blue;display: flex;
+  align-items: center;
+  justify-content: center; }
   
  /* .extendedContent{grid-column:2; grid-row:2 / span 2;background-color:blue; }   */
     /* the remarked above would be useful if you wish to meld areas */ 
     
     
     
-.navigation {grid-area: navigationlArea; background-color:black;}
+.navigation {grid-area: navigationlArea; background-color:black;display: flex;
+  align-items: center;
+  justify-content: center;}
 
     
     
@@ -103,8 +124,7 @@ border: 1px solid #171717;
   <div id="maincontent" class="mainContent">
   
   
-  <p data-height="265" data-theme-id="0" data-slug-hash="jYELVK" data-default-tab="js,result" data-user="domainoverflow" data-embed-version="2" data-pen-title="Rock, Paper & Scissors" class="codepen">See the Pen <a href="https://codepen.io/domainoverflow/pen/jYELVK/">Rock, Paper & Scissors</a> by DomainOverflow.com (<a href="https://codepen.io/domainoverflow">@domainoverflow</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>  
+   
   
   
   <br>Article/
