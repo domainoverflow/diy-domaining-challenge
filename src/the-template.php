@@ -33,13 +33,13 @@
 
 .grid {
   display:grid; align-items:stretch;
-  grid-template-columns: [col1start] 400px [col2start] 
-    1fr [col3start] 200px [col3end];
+  grid-template-columns: [col1start] 1fr [col2start] 
+    2fr [col3start] 0.7fr [col3end];
   grid-template-rows: 
-    [row1start] 55px
-    [row2start] 280px
-    [row3start] 300px
-    [row4start] 80px [row4end];  
+    [row1start] auto
+    [row2start] auto
+    [row3start] auto
+    [row4start] auto [row4end];  
     grid-gap:2px;
   grid-template-areas:
   "domainNameArea titleArea AdditionalSlotArea"
@@ -100,7 +100,14 @@ border: 1px solid #171717;
   <div id="domain-name" class="domainName">.domainName</div>
   <img id="domain-media" class="domainMedia" src="https://e.ventures/partV/forsale5.jpg">
   <div id="title" class="title">.title</div>
-  <div id="maincontent" class="mainContent">.Main Content <br>Article/
+  <div id="maincontent" class="mainContent">
+  
+  
+  <p data-height="265" data-theme-id="0" data-slug-hash="jYELVK" data-default-tab="js,result" data-user="domainoverflow" data-embed-version="2" data-pen-title="Rock, Paper & Scissors" class="codepen">See the Pen <a href="https://codepen.io/domainoverflow/pen/jYELVK/">Rock, Paper & Scissors</a> by DomainOverflow.com (<a href="https://codepen.io/domainoverflow">@domainoverflow</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>  
+  
+  
+  <br>Article/
     Game/Ads/Portal/Iframe/Widget/Applets/Forms</div>
   <div id="extended-content" class="extendedContent">.extendedContent</div>
   <div id="navigational" class="navigation">.navigation</div>
