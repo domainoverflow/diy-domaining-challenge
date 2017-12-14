@@ -11,7 +11,7 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+ <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
 
 </header>
 
@@ -348,7 +348,7 @@ http.send(params);
 
    
 http.onreadystatechange = function() {//Call a function when the state changes.
-    if( http.readyState == 4 && http.status == 200) {
+    if(http.readyState == 4 && http.status == 200) {
         
         domainarray = JSON.parse(http.responseText); 
         console.log(domainarray);
