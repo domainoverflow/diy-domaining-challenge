@@ -97,7 +97,7 @@ min-height:250px;
   align-items: center;
   justify-content: center;}
   
-  .AdditionalSlot2 {grid-area: AdditionalSlotArea2; background-color:white;color:black;display:flex;
+  .AdditionalSlot2 {grid-area: AdditionalSlotArea2; background-color:#E93418;color:black;display:flex;
   align-items: center; justify-content:center;
   }
   
@@ -161,7 +161,30 @@ min-height:250px;
    } 
     
  
-    
+.myForm {
+    display: grid;
+    grid-template-columns: [labels] auto [controls] 1fr;
+    grid-auto-flow: row;
+    grid-gap: .8em;
+    background: #E93418;
+    padding: 0.2em;
+  }
+  .myForm > label  {
+    grid-column: labels;
+    grid-row: auto;
+  }
+  .myForm > input,
+  .myForm > textarea {
+    grid-column: controls;
+    grid-row: auto;
+  }
+  .myForm > button {
+      font-size:18px;
+    grid-column: span 2;
+    background-color:#ff512f; color:white; 
+     border-radius: 12px;
+  box-shadow: 0 5px #999;
+  }  
     
     
 </style>    
@@ -198,9 +221,9 @@ min-height:250px;
   
   <nav>
   <ul >
-    <li><a class="menuFontColour" href="https://dotboss.digital" target="_blank">Dotboss.Digital</a></li>
-    <li><a class="menuFontColour" href="https://domainoverflow.com" target="_blank">DomainOverflow.com</a></li>
-      <li><a class="menuFontColour" target="_blank" href="https://contato.link">Buy this domain</a></li>
+    <li><a class="menuFontColour" href="https://dotboss.digital" target="_blank">Dotboss.Digital</a></li><br>
+    <li><a class="menuFontColour" href="https://domainoverflow.com" target="_blank">DomainOverflow.com</a></li><br>
+      <li><a class="menuFontColour" target="_blank" href="https://contato.link"><b>Buy this domain</b></a></li><br>
     
     
     <li><a href="" class="menuFontColour" target="_blank">Contact</a></li>
@@ -213,7 +236,27 @@ min-height:250px;
   <div id="message2" class="message2">.message2</div>
   <div id="checkoutpage-link" class="posLink">.posLink</div>
   <div id="additional-slot" class="additionalSlot">.additionalSlot</div>
-   <div id="additional-slot2" class="additionalSlot2">.additionalSlot2</div>
+   <div id="additional-slot2" class="additionalSlot2">
+   
+   
+       <form class="myForm">
+
+  <label for="customer_name">Name </label>
+  <input type="text" name="customer_name" id="customer_name" required>
+
+  <label for="email_address">Email </label>
+  <input type="email" name="email_address" id="email_address">
+
+  <label for="comments">Message</label>
+  <textarea name="comments" required id="comments" maxlength="500"></textarea>
+
+  <button>Send</button>
+
+</form>
+   
+   
+   
+   </div>
   
   
   
