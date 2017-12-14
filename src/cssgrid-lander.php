@@ -63,15 +63,16 @@ grid-template-rows:
   
   #imageslot {grid-column:2 ; grid-row:2 / span 3;background-color:white;
   
-
+background-image: url('forsale5.jpg');
   background-repeat: no-repeat; 
-  width:100%; height: 100%;
+  max-height: 100%;
+    max-width: 100%;
+  
   background-size: contain; 
   background-position: center; 
   object-fit: cover;
   
-  
-  
+
 
   
  
@@ -269,15 +270,15 @@ function UpdateTemplate () {
     message2element.innerHTML = message2; 
       poselement.innerHTML = poslink; 
     uppertitleelement.innerHTML = uppertitle; 
-       document.getElementById('imageslot').style.backgroundImage = "url('"+domainimage+"')";
-       domainimageelement.style.backgroundColor="black"; 
-                document.getElementById('imageslot').style.backgroundRepeat= "no-repeat"; 
-                            document.getElementById('imageslot').style.backgroundSize ="100%"; 
+     document.getElementById('imageslot').style.backgroundImage = "url('"+domainimage+"')";
+    //   domainimageelement.style.backgroundColor="black"; 
+             //   document.getElementById('imageslot').style.backgroundRepeat= "no-repeat"; 
+                         //   document.getElementById('imageslot').style.backgroundSize ="100%"; 
 
     //   document.getElementById('domain-image').style.backgroundSize="auto";
       //         document.getElementById('domain-image').style.height="100%"; 
      //    document.getElementById('domain-image').style.width="100%"; 
-      document.getElementById('domain-image').style.backgroundRepeat= "no-repeat"; 
+    //  document.getElementById('domain-image').style.backgroundRepeat= "no-repeat"; 
     //   document.getElementById('domain-image').style.backgroundPosition = "center"; 
        
        
