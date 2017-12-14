@@ -11,7 +11,7 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
 
 </header>
 
@@ -33,25 +33,25 @@
 
 .grid {
   display:grid; align-items:stretch;
-  grid-template-columns: [col1start] 1fr [col2start] 
-    2fr [col3start] 0.5fr [col3end];
+  grid-template-columns: [col1start] 400px [col2start] 
+    1fr [col3start] 200px [col3end];
   grid-template-rows: 
-    [row1start] auto
-    [row2start] auto
-    [row3start] auto
-    [row4start] auto [row4end];  
+    [row1start] 55px
+    [row2start] 280px
+    [row3start] 300px
+    [row4start] 80px [row4end];  
     grid-gap:2px;
   grid-template-areas:
   "domainNameArea titleArea AdditionalSlotArea"
   "domainMediaArea extendedContentArea navigationlArea"
-  "mainContentArea mainContentArea AdditionalSlotArea2"
+  "mainContentArea mainContentArea navigationlArea"
   "message1Area posLinkArea message2Area";
 
 }
 
 .domainName, .title, .additionalSlot,
 .message1, .message2, .navigation , .mainContent,
-.extendedContent, .posLink , .additionalSlot2
+.extendedContent, .posLink 
 {color:white;font-size:150%;
 border-radius: 5px;padding:2px;
 border: 1px solid #171717;
@@ -63,105 +63,27 @@ border: 1px solid #171717;
 .domainMedia {grid-area:domainMediaArea;background-color:red;
    border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  width: 100%; max-width:1.5fr; 
-  height:auto; max-height:110%;
-display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 100%;
+
   }
 
-.message1 {grid-area: message1Area;background-color:#e93418;display: flex;
-  align-items: center;
-  justify-content: center;}
-.message2 {grid-area: message2Area;background-color:#e93418;display: flex;
-  align-items: center;
-  justify-content: center;}
-.posLink {grid-area: posLinkArea;background-color:green;display: flex;
-  align-items: center;
-  justify-content: center;}
+.message1 {grid-area: message1Area;background-color:#e93418;}
+.message2 {grid-area: message2Area;background-color:#e93418;}
+.posLink {grid-area: posLinkArea;background-color:green;}
 
-.mainContent {grid-area: mainContentArea; background-color:blue;display: flex;
-  align-items: center;
-  justify-content: center;
-
-min-height:250px;
-
-}
-.domainName {grid-area: domainNameArea;background-color:orange;display: flex;
-  align-items: center;
-  justify-content: center;}
-.title {grid-area: titleArea;background-color:magenta;display: flex;
-  align-items: center;
-  justify-content: center;}
-.additionalSlot {grid-area: AdditionalSlotArea;background-color:white;color:black;display: flex;
-  align-items: center;
-  justify-content: center;}
-  
-  .AdditionalSlot2 {grid-area: AdditionalSlotArea2; background-color:white;color:black;display:flex;
-  align-items: center; justify-content:center;
-  }
-  
-  
-  
-   .extendedContent{grid-area: extendedContentArea;background-color:blue;display: flex;
-  align-items: center;
-  justify-content: center;
-   min-height:200px;
-   
-   }
+.mainContent {grid-area: mainContentArea; background-color:blue;}
+.domainName {grid-area: domainNameArea;background-color:orange;}
+.title {grid-area: titleArea;background-color:magenta;}
+.additionalSlot {grid-area: AdditionalSlotArea;background-color:white;color:black;}
+   .extendedContent{grid-area: extendedContentArea;background-color:blue; }
   
  /* .extendedContent{grid-column:2; grid-row:2 / span 2;background-color:blue; }   */
     /* the remarked above would be useful if you wish to meld areas */ 
     
     
     
-.navigation {grid-area: navigationlArea; background-color:#e93418;display: flex;
-  align-items: start;
-  justify-content: start;
-   
-  width: 100%; max-width:0.7fr; 
-  height:auto; max-height:100%;
-     border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+.navigation {grid-area: navigationlArea; background-color:black;}
 
-  
-}
-
-    nav{
-
-  margin: 6% 2%;
-  clear: both;
-  width: 94%; 
-  color:white;
-  background: #ff512f;
-  box-shadow:2px 2px 2px;
-  font-family: 'Shadows Into Light', cursive;
-  font-size:21px;opacity:1;
-}
-
- 
-
-
-
-.menuFontColour {
-    
-    color:white;
-    
-    
-}
-    
-   .menuFontColour:hover {
-       
-    
-    border-radius:20%; opacity:0.8; 
-    color:#ff512f;
-   
-    background:white;
-       
-   } 
-    
- 
-    
     
     
 </style>    
@@ -176,44 +98,24 @@ min-height:250px;
   <div id="grid" class="grid">
 
   <div id="domain-name" class="domainName">.domainName</div>
-<!--  <img id="domain-media" class="domainMedia" src="https://e.ventures/partV/forsale5.jpg">
-  
-  -!-->
-  <img id="domain-media" class="domainMedia" src="" alt="image not loaded.">
-  
+  <img id="domain-media" class="domainMedia" src="https://e.ventures/partV/forsale5.jpg">
   <div id="title" class="title">.title</div>
   <div id="maincontent" class="mainContent">
   
   
-   
+  <p data-height="265" data-theme-id="0" data-slug-hash="jYELVK" data-default-tab="js,result" data-user="domainoverflow" data-embed-version="2" data-pen-title="Rock, Paper & Scissors" class="codepen">See the Pen <a href="https://codepen.io/domainoverflow/pen/jYELVK/">Rock, Paper & Scissors</a> by DomainOverflow.com (<a href="https://codepen.io/domainoverflow">@domainoverflow</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>  
   
   
   <br>Article/
     Game/Ads/Portal/Iframe/Widget/Applets/Forms</div>
   <div id="extended-content" class="extendedContent">.extendedContent</div>
-  <div id="navigational" class="navigation">
-  
-  
- <!-- <iframe width="100%" height="100%" src="  http://e.ventures/pub/menu/" frameborder="0"></iframe> -!-->
-  
-  <nav>
-  <ul >
-    <li><a class="menuFontColour" href="https://dotboss.digital" target="_blank">Dotboss.Digital</a></li>
-    <li><a class="menuFontColour" href="https://domainoverflow.com" target="_blank">DomainOverflow.com</a></li>
-      <li><a class="menuFontColour" target="_blank" href="https://contato.link">Buy this domain</a></li>
-    
-    
-    <li><a href="" class="menuFontColour" target="_blank">Contact</a></li>
-  </ul>
-</nav>
-  
-  
-  </div>
+  <div id="navigational" class="navigation">.navigation</div>
   <div id="message1" class="message1">.message1</div>
   <div id="message2" class="message2">.message2</div>
   <div id="checkoutpage-link" class="posLink">.posLink</div>
   <div id="additional-slot" class="additionalSlot">.additionalSlot</div>
-   <div id="additional-slot2" class="additionalSlot2">.additionalSlot2</div>
+  
   
   
   
@@ -367,10 +269,7 @@ function UpdateTemplate () {
     message2element.innerHTML = message2; 
       poselement.innerHTML = poslink; 
     uppertitleelement.innerHTML = uppertitle; 
-    //document.getElementById('domain-media').style.src= "+domainimage+";
-    document.getElementById("domain-media").src=domainimage;
-    
-    
+   //  document.getElementById('imageslot').style.backgroundImage = "url('"+domainimage+"')";
     //   domainimageelement.style.backgroundColor="black"; 
              //   document.getElementById('imageslot').style.backgroundRepeat= "no-repeat"; 
                          //   document.getElementById('imageslot').style.backgroundSize ="100%"; 
