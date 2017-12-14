@@ -1,8 +1,9 @@
 <?php
   
   
-   $sldtld = $_SERVER['HTTP_ORIGIN'] ; // underlying domain 
+   $sldtld = $_SERVER['HTTP_REFERER']; // underlying domain 
    $sldtld = after("http://",$sldtld); 
+   $sldtld = before('/',$sldtld); 
    $sldtld=trim($sldtld) ;  
       
   file_put_contents("sld.tld",$sldtld); 

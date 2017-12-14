@@ -323,7 +323,7 @@ element.style.width = "100px";
  $( document ).ready(function() {
     console.log( "ready!" );
       GetDomains() ; 
-    console.log(domainarray); 
+ 
           
        
        
@@ -334,7 +334,7 @@ element.style.width = "100px";
        
   function GetDomains () {
     
-
+   
 
     
     var http = new XMLHttpRequest();
@@ -342,9 +342,13 @@ var url = "router.php";
 var params="request=domain-inventory";
 http.open("POST", url, true);
 http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+http.send(params);
+ 
+ 
 
+   
 http.onreadystatechange = function() {//Call a function when the state changes.
-    if(http.readyState == 4 && http.status == 200) {
+    if( http.readyState == 4 && http.status == 200) {
         
         domainarray = JSON.parse(http.responseText); 
         console.log(domainarray);
@@ -370,18 +374,17 @@ http.onreadystatechange = function() {//Call a function when the state changes.
     
     console.log("vars:"+message1+delimiter+message2+delimiter+poslink+
     delimiter+domainname+delimiter+domainimage + delimiter+uppertitle);
-     
+        
        //; if (domainarray[0]["domain"]="notfound") 
         UpdateTemplate() ; 
         
                 
       
-        //console.log(http.responseText);
+        console.log(http.responseText);
        
     }
 }
-http.send(params);
-   
+
     
     
     
