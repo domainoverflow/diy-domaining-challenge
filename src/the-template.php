@@ -33,12 +33,12 @@
 
 .grid {
   display:grid; align-items:stretch;
-  grid-template-columns: [col1start] 1fr [col2start] 
-    1fr [col3start] 0.5fr [col3end];
+  grid-template-columns: [col1start] 1.2fr [col2start] 
+    1.1fr [col3start] 0.3fr [col3end];
   grid-template-rows: 
     [row1start] auto
     [row2start] auto
-    [row3start] 1fr
+    [row3start] 1.5fr
     [row4start] auto [row4end];  
     grid-gap:2px;
   grid-template-areas:
@@ -52,7 +52,7 @@
 .domainName, .title, .additionalSlot,
 .message1, .message2, .navigation , .mainContent,
 .extendedContent, .posLink , .additionalSlot2
-{color:white;font-size:150%;
+{color:white;font-size:22px;
 border-radius: 5px;padding:2px;
 border: 1px solid #171717;
    box-shadow: 1px 1px #888888; 
@@ -71,13 +71,13 @@ display: flex;
   }
 
 .message1 {grid-area: message1Area;background-color:#e93418;display: flex;
-  align-items: center;
+  align-items: center;color:white;
   justify-content: center;}
 .message2 {grid-area: message2Area;background-color:#e93418;display: flex;
-  align-items: center;
+  align-items: center;color:white;
   justify-content: center;}
-.posLink {grid-area: posLinkArea;background-color:green;display: flex;
-  align-items: center;
+.posLink {grid-area: posLinkArea;background-color:#ff512f;display: flex;
+  align-items: center;color:white;
   justify-content: center;}
 
 .mainContent {grid-area: mainContentArea; background-color:white;display: flex;
@@ -86,10 +86,10 @@ align-items: center;
    min-height:400px;
 
 }
-.domainName {grid-area: domainNameArea;background-color:orange;display: flex;
+.domainName {grid-area: domainNameArea;background-color:#ff512f;display: flex;
   align-items: center;
   justify-content: center;}
-.title {grid-area: titleArea;background-color:magenta;display: flex;
+.title {grid-area: titleArea;background-color:#e93418;display: flex;
   align-items: center;
   justify-content: center;}
 .additionalSlot {grid-area: AdditionalSlotArea;background-color:white;color:black;display: flex;
@@ -215,7 +215,7 @@ align-items: center;
   <div id="title" class="title">.title</div>
   <div id="maincontent" class="mainContent">
   
-<iframe width="100%" height="100%" src="https://e.ventures/content/forest/"  frameborder="0" scrolling="no" onload="resizeIframe(this)"  >
+<iframe width="100%" height="99%" src="https://e.ventures/content/forest/"  frameborder="0" scrolling="no" onload="resizeIframe(this)"  >
 </iframe>
   
   
@@ -223,7 +223,7 @@ align-items: center;
    </div>
   <div id="extended-content" class="extendedContent">
   
-   <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/zJ7hUvU-d2Q?rel=0&amp;controls=0&amp;showinfo=0&amp;start=22&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+   <iframe width="100%" height="99%" src="https://www.youtube-nocookie.com/embed/zJ7hUvU-d2Q?rel=0&amp;controls=0&amp;showinfo=0&amp;start=22&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
   
    
   
@@ -251,12 +251,9 @@ align-items: center;
   <div id="message1" class="message1">.message1</div>
   <div id="message2" class="message2">.message2</div>
   <div id="checkoutpage-link" class="posLink">.posLink</div>
-  <div id="additional-slot" class="additionalSlot" style="background-image:url('canada.png');">
+  <div id="additional-slot" class="additionalSlot">
+    
   
-  
-  
-  
-  hello
   
   </div>
    <div id="additional-slot2" class="additionalSlot2">
@@ -426,14 +423,21 @@ function UpdateTemplate () {
     var message2element = document.querySelector("#message2");
         // domainimageelement.innerHTML = domainimage;
    
-   
+    var additionalslot1element = document.querySelector("#additional-slot"); 
+    
 
    
   // domainimageelement.style.backgroundImage =  "url('"+domainimage+"')";
  //  document.body.style.backgroundImage = "url('img_tree.png')";
     domainelement.innerHTML = sldtld;
+    additionalslot1element.innerHTML = sldtld; 
     message1element.innerHTML = message1;
-    message2element.innerHTML = message2; 
+    //////// CONFIG .JSON OVERRIDE !!!
+    //message2element.innerHTML = message2;
+    message2element.innerHTML = sldtld;
+    //////////////////////////////////////////
+    
+     
       poselement.innerHTML = poslink; 
     uppertitleelement.innerHTML = uppertitle; 
     //document.getElementById('domain-media').style.src= "+domainimage+";
