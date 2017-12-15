@@ -38,7 +38,7 @@
   grid-template-rows: 
     [row1start] auto
     [row2start] auto
-    [row3start] auto
+    [row3start] 1fr
     [row4start] auto [row4end];  
     grid-gap:2px;
   grid-template-areas:
@@ -80,12 +80,12 @@ display: flex;
   align-items: center;
   justify-content: center;}
 
-.mainContent {grid-area: mainContentArea; background-color:blue;display: flex;
+.mainContent {grid-area: mainContentArea; background-color:white;display: flex;
   align-items: center;
   justify-content: center;
 width:100%; height:100%; 
-max-height:550px; max-width:1.2fr;
-min-height:250px;
+max-width:100%;max-height:1000px;
+ min-height:480px;
 
 }
 .domainName {grid-area: domainNameArea;background-color:orange;display: flex;
@@ -189,7 +189,11 @@ min-height:250px;
    
    
     
+   ///
    
+   
+      
+  
    
     
     
@@ -213,7 +217,10 @@ min-height:250px;
   <div id="title" class="title">.title</div>
   <div id="maincontent" class="mainContent">
   
-
+<iframe width="100%" height="100%" src="https://e.ventures/games/balloons"  frameborder="0" scrolling="no" onload="resizeIframe(this)"  >
+</iframe>
+  
+  
     
    </div>
   <div id="extended-content" class="extendedContent">
@@ -466,13 +473,17 @@ function UpdateTemplate () {
        
        
        
+   /////////////////
+   
+     function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+   
+
        
        
-       
-       
-       
-       
-       
+ 
+   
        
        
        
