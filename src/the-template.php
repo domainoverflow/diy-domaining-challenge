@@ -81,11 +81,9 @@ display: flex;
   justify-content: center;}
 
 .mainContent {grid-area: mainContentArea; background-color:white;display: flex;
-  align-items: center;
+align-items: center;
   justify-content: center;
-width:100%; height:100%; 
-max-width:100%;max-height:1000px;
- min-height:480px;
+   min-height:400px;
 
 }
 .domainName {grid-area: domainNameArea;background-color:orange;display: flex;
@@ -217,7 +215,7 @@ max-width:100%;max-height:1000px;
   <div id="title" class="title">.title</div>
   <div id="maincontent" class="mainContent">
   
-<iframe width="100%" height="100%" src="https://e.ventures/games/balloons"  frameborder="0" scrolling="no" onload="resizeIframe(this)"  >
+<iframe width="100%" height="100%" src="https://e.ventures/content/forest/"  frameborder="0" scrolling="no" onload="resizeIframe(this)"  >
 </iframe>
   
   
