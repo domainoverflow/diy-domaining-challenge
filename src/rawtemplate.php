@@ -60,8 +60,8 @@ border: 1px solid #171717;
 
 
 
-.domainMedia {grid-area:domainMediaArea;background-color:red;
-   border: 1px solid #ccc;
+.domainMedia {grid-area:domainMediaArea;background-color:#ff512f;color:white;
+   border: 1px solid #ccc;font-size:22px;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   width: 100%; max-width:1.5fr; 
   height:auto; max-height:110%;
@@ -92,15 +92,16 @@ align-items: center;color:white;
 .title {grid-area: titleArea;background-color:#e93418;display: flex;
   align-items: center;
   justify-content: center;}
-.additionalSlot {grid-area: AdditionalSlotArea;background-color:#e93418;color:white;display: flex;
+.additionalSlot {grid-area: AdditionalSlotArea;background-color:green;color:white;display: flex;
   align-items: center;
   justify-content: center;}
   
-  .AdditionalSlot2 {grid-area: AdditionalSlotArea2; background-color:#E93418;color:black;display:flex;
+  .AdditionalSlot2 {grid-area: AdditionalSlotArea2; background-color:#E93418;color:white;display:flex;
   align-items: center; justify-content:center;
   }
   
-  
+  /*   margin: 0 auto; */
+  /*   padding: 0.5em 0 0 0.5em;                */
   
    .extendedContent{grid-area: extendedContentArea;background-color:blue;display: flex;
   align-items: center;
@@ -139,9 +140,7 @@ align-items: center;color:white;
 }
 
  
-  
 
-      
     
     
     
@@ -223,41 +222,33 @@ align-items: center;color:white;
 <!--  <img id="domain-media" class="domainMedia" src="https://e.ventures/partV/forsale5.jpg">
   
   -!-->
-  <img id="domain-media" class="domainMedia" src="" alt="image not loaded.">
-  
+ 
+   
+ 
+   <div id="domain-media" class="domainMedia">.domainMedia (pic/video)</div>
   <div id="title" class="title">.title</div>
   <div id="maincontent" class="mainContent">
-  
-<iframe width="100%" height="99%" src="https://e.ventures/games/balloons/"  frameborder="0" scrolling="no" onload="resizeIframe(this)"  >
-</iframe>
-  
-  
+ 
+    
+    .mainContent (Portal / Games / Article / App / Iframe / Widget / Game )
+    
+    
+    
     
    </div>
   <div id="extended-content" class="extendedContent">
   
-   <iframe width="100%" height="99%" src="https://www.youtube-nocookie.com/embed/zJ7hUvU-d2Q?rel=0&amp;controls=0&amp;showinfo=0&amp;start=22&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+ 
   
-   
+   .extendedContent ( Ads / Subscribe / )
   
   
   
   </div>
   <div id="navigational" class="navigation">
   
-  
- <!-- <iframe width="100%" height="100%" src="  http://e.ventures/pub/menu/" frameborder="0"></iframe> -!-->
-  
-  <nav>
-  <ul >
-    <li><a class="menuFontColour" href="https://dotboss.digital" target="_blank">Dotboss.Digital</a></li><br>
-    <li><a class="menuFontColour" href="https://domainoverflow.com" target="_blank">DomainOverflow.com</a></li><br>
-      <li><a class="menuFontColour" target="_blank" href="https://contato.link"><b>Buy this domain</b></a></li><br>
+  .navigational
     
-    
-    <li><a href="" class="menuFontColour" target="_blank">Contact</a></li>
-  </ul>
-</nav>
   
   
   </div>
@@ -265,28 +256,13 @@ align-items: center;color:white;
   <div id="message2" class="message2">.message2</div>
   <div id="checkoutpage-link" class="posLink">.posLink</div>
   <div id="additional-slot" class="additionalSlot">
-    
+  .additionalSlot (defaults to domain name)    
   
   
   </div>
    <div id="additional-slot2" class="additionalSlot2">
    
-   
-       <form class="myForm">
-
-  <label for="customer_name">Name </label>
-  <input type="text" name="customer_name" id="customer_name" required>
-
-  <label for="email_address">Email </label>
-  <input type="email" name="email_address" id="email_address">
-
-  <label for="comments">Message</label>
-  <textarea name="comments" required id="comments" maxlength="500"></textarea>
-
-  <button>Send</button>
-
-</form>
-   
+   .contactForm / Ads / SignUp / Newsletter 
    
    
    </div>
@@ -442,19 +418,19 @@ function UpdateTemplate () {
    
   // domainimageelement.style.backgroundImage =  "url('"+domainimage+"')";
  //  document.body.style.backgroundImage = "url('img_tree.png')";
-    domainelement.innerHTML = sldtld;
-    additionalslot1element.innerHTML = sldtld; 
-    message1element.innerHTML = message1;
+  //  domainelement.innerHTML = sldtld;
+  //  additionalslot1element.innerHTML = sldtld; 
+  //  message1element.innerHTML = message1;
     //////// CONFIG .JSON OVERRIDE !!!
     //message2element.innerHTML = message2;
-    message2element.innerHTML = sldtld;
+ //   message2element.innerHTML = sldtld;
     //////////////////////////////////////////
     
      
-      poselement.innerHTML = poslink; 
-    uppertitleelement.innerHTML = uppertitle; 
+  //    poselement.innerHTML = poslink; 
+   // uppertitleelement.innerHTML = uppertitle; 
     //document.getElementById('domain-media').style.src= "+domainimage+";
-    document.getElementById("domain-media").src=domainimage;
+  //  document.getElementById("domain-media").src=domainimage;
     
     
     //   domainimageelement.style.backgroundColor="black"; 
