@@ -2,8 +2,11 @@
 
 <h2>Sell your domains and digital assets, ditch the middle-men, support decentralised.</h2><br>
 <br>
+![CSS Grid Landers](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/12/sketch.jpg?ssl=1)
+![Multi Landers](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/part3-final-1.png?ssl=1)
+<b>Multi use Lander(s)</b>
+![CSS Grid Landers](https://e.ventures/partV/diy-domaining-challenge/forsale8.jpg)
 
-![Multi Lander](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/part3-final-1.png?ssl=1)
 <b>Multi use Lander(s)</b>
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/buynow.png?ssl=1)<br>
 <b>Auto-Paypal and Get notified, no middle entities ! </b><br>
@@ -12,7 +15,11 @@
 <b>Easy Bulk Publishing</b>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/supportedgateways.png?ssl=1)<br>
 <b>Working features so far:</b><br>
-
+(Order by Latest commit )
+-CSS Grid templating. Template base has been upgraded to CSS Grids.<br>
+-Balloon game with custom messages
+-Floating images (ex: balloons ) layered over CSS Grid -blending the game and links.
+-
 -Ability to use a generic template that looks custom ( it knows its own name ).<br>
 -Bulk Domain ( "addondomain" ) Adder for cpanel-based hosting accounts.<br>
 -Smart Checkout page/POS with auto-paypal, Counter-offer, Contact and BuyNow.<br>
@@ -23,7 +30,6 @@
 
 <b>Upcoming features</b><br>
 
-
 -Real time stats from webserver (apache or nginx).<br> 
 -Full International Domain Names ( IDNs, punycode, unicode ) support :es::it::cn::ru::fr::gb::de::us::jp::cn: and more+<br>
 -Bulk subdomain creation ( including cpanel-based and direct stacks ).<br>
@@ -32,7 +38,6 @@
 -Precise geo location of every hit across your digital market.<br>
 -Auto Keyword fetching.<br>
 -Monitoring dashboard. :eyes: <br>
--CSS Grid templating.<br>
 <b>-.... You tell us or start contributing today, fork it!</b>
 
 <b>To Install:</b> 
@@ -45,7 +50,7 @@ Simply git clone the project and upload src/ folder to your server or local env 
 <br><b>Stop paying for domain auctions!</br>
 <br>
 Index of articles:
-Next article / release: December, 12th 2017
+Next article / release: December, 22nd 2017
 -----------------------------
 
 DIY Domaining Challenge Custom Domain Marketplace series from DomainOverflow.com
@@ -64,9 +69,9 @@ target="_blank"> DOMAINING DIY CHALLENGE Part II: Creating a proper checkout pag
 
 <a href="https://domainoverflow.com/index.php/2017/11/26/diy-domain-marketplace-series-part-iv-designing-admin-dashboard-bulk-template-publisher/" target="_blank">  DOMAINING DIY CHALLENGE Part  IV 1/2: The Admin panel.</a><br>
   
-  <a href="https://domainoverflow.com/index.php/2017/12/06/diy-domaining-marketplace-series-part-iv-2-2-designing-admin-dashboard-bulk-template-publisher/" target="_blank">  DOMAINING DIY CHALLENGE Part  IV 2/2: The Admin panel.Cpanel Bulk Domain Adder</a><br>
-  
-  
+  <a href="https://domainoverflow.com/index.php/2017/12/06/diy-domaining-marketplace-series-part-iv-2-2-designing-admin-dashboard-bulk-template-publisher/" target="_blank">  DOMAINING DIY CHALLENGE Part  IV 2/2: The Admin panel.Cpanel Bulk Domain Adder</a><br><br>
+   <a href="https://domainoverflow.com/index.php/2017/12/16/diy-domaining-marketplace-series-part-v-1-2-enhancing-template-css-grid/" target="_blank">  DOMAINING DIY CHALLENGE Part  V 1/2: Enhancing our template with CSS Grid</a><br>
+   
 <br><br>
  
 ![alt_text](https://i2.wp.com/domainoverflow.com/wp-content/uploads/2017/11/checkout-buttons.png?ssl=1)<br>
