@@ -10,6 +10,7 @@
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/buynow.png?ssl=1)<br>
 <b>Auto-Paypal and Get notified, no middle entities ! </b><br>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/developed-template.png?resize=1024%2C427&ssl=1)<br>
+<b>CSS Grid landers: Works across all devices and browsers. <a href="https://e.ventures/partv/diy-domaining-challenge/src/the-template.php" target="_blank">Try it</b></a>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/11/counter-2.png?ssl=1)<br>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/enhancedadmin-3.png?ssl=1)<br>
 <b>Easy Bulk Publishing</b>
