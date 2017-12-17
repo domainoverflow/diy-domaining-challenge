@@ -16,11 +16,10 @@
 <b>Auto-Paypal and Get notified, no middle entities ! </b><br>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/supportedgateways.png?ssl=1)<br>
 <b>Working features so far:</b><br>
-(Order by Latest commit )
+(Order by Latest commit )<br>
 -CSS Grid templating. Template base has been upgraded to CSS Grids.<br>
--Balloon game with custom messages
--Floating images (ex: balloons ) layered over CSS Grid -blending the game and links.
--
+-Balloon game with custom messages.<br>
+-Floating images (ex: balloons ) layered over CSS Grid -blending the game and links.<br>
 -Ability to use a generic template that looks custom ( it knows its own name ).<br>
 -Bulk Domain ( "addondomain" ) Adder for cpanel-based hosting accounts.<br>
 -Smart Checkout page/POS with auto-paypal, Counter-offer, Contact and BuyNow.<br>
@@ -74,6 +73,6 @@ target="_blank"> DOMAINING DIY CHALLENGE Part II: Creating a proper checkout pag
    <a href="https://domainoverflow.com/index.php/2017/12/16/diy-domaining-marketplace-series-part-v-1-2-enhancing-template-css-grid/" target="_blank">  DOMAINING DIY CHALLENGE Part  V 1/2: Enhancing our template with CSS Grid</a><br>
    
 <br><br>
- 
+![alt_text](https://e.ventures/partV/diy-domaining-challenge/forsale5.jpg)<br> 
 ![alt_text](https://i2.wp.com/domainoverflow.com/wp-content/uploads/2017/11/checkout-buttons.png?ssl=1)<br>
  
