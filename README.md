@@ -1,7 +1,7 @@
 <h1><br>DIY Domaining: Create your own custom digital marketplace.</h1><br>
 <h2>Sell your domains and digital assets, ditch the middle-men, support decentralised.</h2><br>
-![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/12/sketch.jpg?ssl=1)<br>
-<b>Works across all devices and browsers. Try it!! </b>
+
+
 
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/part3-final-1.png?ssl=1)<br>
 <b>Multi use Lander(s)</b>
