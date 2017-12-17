@@ -6,9 +6,10 @@
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/part3-final-1.png?ssl=1)<br>
 <b>CSS Grid Landers</b>
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/12/sketch.jpg?ssl=1)<br>
-<b>Multi use Lander(s)</b>
+<b>Easy POS/Checkout pages</b>
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/buynow.png?ssl=1)<br>
 <b>Auto-Paypal and Get notified, no middle entities ! </b><br>
+![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/11/counter-2.png?ssl=1)<br>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/11/counter-2.png?ssl=1)<br>
 ![alt text](https://i1.wp.com/domainoverflow.com/wp-content/uploads/2017/12/enhancedadmin-3.png?ssl=1)<br>
 <b>Easy Bulk Publishing</b>
