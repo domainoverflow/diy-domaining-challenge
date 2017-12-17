@@ -2,9 +2,11 @@
 <h2>Sell your domains and digital assets, ditch the middle-men, support decentralised.</h2><br>
 
 ![alt text](https://e.ventures/partV/diy-domaining-challenge/forsale8.jpg)<br>
-<b>Multi use Lander(s)</b>
+<b>Multi use Landers</b>
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/part3-final-1.png?ssl=1)<br>
-<b>Multi use Lander(s)</b>
+<b>CSS Grid Landers</b>
+![alt text](https://e.ventures/partV/diy-domaining-challenge/forsale8.jpg)<br>
+<b>Easy POS/Checkout page landers</b>
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/12/sketch.jpg?ssl=1)<br>
 <b>Multi use Lander(s)</b>
 ![alt text](https://i0.wp.com/domainoverflow.com/wp-content/uploads/2017/11/buynow.png?ssl=1)<br>
