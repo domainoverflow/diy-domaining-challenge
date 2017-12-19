@@ -69,16 +69,17 @@
 .message1, .message2, .navigation , .mainContent,
 .extendedContent, .posLink , .additionalSlot2
 {color:white;font-size:22px;
-border-radius: 5px;padding:2px;
-border: 1px solid #171717;
-   box-shadow: 1px 1px #888888; 
+//border-radius: 5px;
+padding:2px;
+//border: 1px solid #171717;
+ //  box-shadow: 1px 1px #888888; 
 }
 
 
 
 .domainMedia {grid-area:domainMediaArea;background-color:red;
-   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+//   border: 1px solid #ccc;
+//  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   width: 100%; max-width:1.5fr; 
   height:auto; max-height:110%;
 display: flex;
@@ -136,8 +137,8 @@ align-items: center;color:white;
    
   width: 100%; max-width:0.7fr; 
   height:auto; max-height:100%;
-     border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    // border: 1px solid #ccc;
+  //box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
 
   
 }
@@ -149,7 +150,7 @@ align-items: center;color:white;
   width: 94%; 
   color:white;
   background: #ff512f;
-  box-shadow:2px 2px 2px;
+  //box-shadow:2px 2px 2px;
   font-family: 'Shadows Into Light', cursive;
   font-size:21px;opacity:1;
 }
@@ -181,7 +182,8 @@ align-items: center;color:white;
    .menuFontColour:hover {
        
     
-    border-radius:20%; opacity:0.8; 
+    border-radius:20%; 
+      opacity:0.8; 
     color:#ff512f;
    
     background:white;
@@ -211,7 +213,7 @@ align-items: center;color:white;
     grid-column: span 2;
     background-color:#ff512f; color:white; 
      border-radius: 12px;
-  box-shadow: 0 5px #999;
+  //box-shadow: 0 5px #999;
   }  
    
    
