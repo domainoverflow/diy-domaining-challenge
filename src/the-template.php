@@ -45,6 +45,11 @@
 // All Rights Reserved DomainOverflow.com 
 // License: MIT
 */
+
+
+
+
+
   
 
 .grid {
@@ -70,9 +75,11 @@
 .extendedContent, .posLink , .additionalSlot2
 {color:white;font-size:22px;
 //border-radius: 5px;
-padding:2px;
+padding:1px;
 //border: 1px solid #171717;
  //  box-shadow: 1px 1px #888888; 
+
+
 }
 
 
@@ -160,7 +167,11 @@ align-items: center;color:white;
 
       
     
-    
+.mainContent{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}    
     
     
     
@@ -213,7 +224,7 @@ align-items: center;color:white;
     grid-column: span 2;
     background-color:#ff512f; color:white; 
      border-radius: 12px;
-  //box-shadow: 0 5px #999;
+  box-shadow: 0 5px #999;
   }  
    
    
@@ -246,7 +257,7 @@ align-items: center;color:white;
   <div id="title" class="title">.title</div>
   <div id="maincontent" class="mainContent">
   
-<iframe width="100%" height="99%" src="https://e.ventures/games/balloons/"  frameborder="0" scrolling="no" onload="resizeIframe(this)"  >
+<iframe width="100%" height="99%" src="https://e.ventures/games/balloons/"  frameBorder="0" scrolling="no" onload="resizeIframe(this)"  >
 </iframe>
   
   
@@ -254,7 +265,7 @@ align-items: center;color:white;
    </div>
   <div id="extended-content" class="extendedContent">
   
-   <iframe width="100%" height="99%" src="https://www.youtube-nocookie.com/embed/zJ7hUvU-d2Q?rel=0&amp;controls=0&amp;showinfo=0&amp;start=22&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+   <iframe width="100%" height="99%" src="https://www.youtube-nocookie.com/embed/zJ7hUvU-d2Q?rel=0&amp;controls=0&amp;showinfo=0&amp;start=22&amp;autoplay=1" frameBorder="0" gesture="media" allow="encrypted-media"></iframe>
   
    
   
@@ -264,7 +275,7 @@ align-items: center;color:white;
   <div id="navigational" class="navigation">
   
   
- <!-- <iframe width="100%" height="100%" src="  http://e.ventures/pub/menu/" frameborder="0"></iframe> -!-->
+ <!-- <iframe width="100%" height="100%" src="  http://e.ventures/pub/menu/" frameBorder="0"></iframe> -!-->
   
   <nav>
   <ul >
