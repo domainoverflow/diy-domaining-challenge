@@ -79,7 +79,6 @@ padding:1px;
 //border: 1px solid #171717;
  //  box-shadow: 1px 1px #888888; 
 
-
 }
 
 
@@ -130,7 +129,6 @@ align-items: center;color:white;
   align-items: center;
   justify-content: center;
    min-height:200px;
-   
    }
   
  /* .extendedContent{grid-column:2; grid-row:2 / span 2;background-color:blue; }   */
@@ -234,7 +232,9 @@ align-items: center;color:white;
    
       
   
-   
+  iframe{
+border:0;
+} 
     
     
 </style>    
@@ -252,12 +252,12 @@ align-items: center;color:white;
 <!--  <img id="domain-media" class="domainMedia" src="https://e.ventures/partV/forsale5.jpg">
   
   -!-->
-  <img id="domain-media" class="domainMedia" src="" alt="image not loaded.">
+  <img id="domain-media" class="domainMedia" src="" alt="image not loaded";>
   
   <div id="title" class="title">.title</div>
   <div id="maincontent" class="mainContent">
   
-<iframe width="100%" height="99%" src="https://e.ventures/games/balloons/"  frameBorder="0" scrolling="no" onload="resizeIframe(this)"  >
+<iframe width="100%" height="99%" src="https://e.ventures/games/balloons/"   scrolling="no" onload="resizeIframe(this)" >
 </iframe>
   
   
@@ -265,7 +265,7 @@ align-items: center;color:white;
    </div>
   <div id="extended-content" class="extendedContent">
   
-   <iframe width="100%" height="99%" src="https://www.youtube-nocookie.com/embed/zJ7hUvU-d2Q?rel=0&amp;controls=0&amp;showinfo=0&amp;start=22&amp;autoplay=1" frameBorder="0" gesture="media" allow="encrypted-media"></iframe>
+   <iframe width="100%" height="99%" src="https://www.youtube-nocookie.com/embed/zJ7hUvU-d2Q?rel=0&amp;controls=0&amp;showinfo=0&amp;start=22&amp;autoplay=1"  gesture="media" allow="encrypted-media" ></iframe>
   
    
   
@@ -275,7 +275,7 @@ align-items: center;color:white;
   <div id="navigational" class="navigation">
   
   
- <!-- <iframe width="100%" height="100%" src="  http://e.ventures/pub/menu/" frameBorder="0"></iframe> -!-->
+ <!-- <iframe width="100%" height="100%" src="  http://e.ventures/pub/menu/" ></iframe> -!-->
   
   <nav>
   <ul >
