@@ -61,7 +61,7 @@
     [row2start] auto
     [row3start] 1.5fr
     [row4start] auto [row4end];  
-    grid-gap:2px;
+    grid-gap:1px;
   grid-template-areas:
   "domainNameArea titleArea AdditionalSlotArea"
   "domainMediaArea extendedContentArea navigationlArea"
@@ -93,14 +93,14 @@ display: flex;
   justify-content: center;
   }
 
-.message1 {grid-area: message1Area;background-color:#e93418;display: flex;
+.message1 {grid-area: message1Area;background-color:#6c7a89;display: flex;
   align-items: center;color:white;
   justify-content: center;}
-.message2 {grid-area: message2Area;background-color:#e93418;display: flex;
+.message2 {grid-area: message2Area;background-color:#6c7a89;display: flex;
   align-items: center;color:white;
   justify-content: center;}
-.posLink {grid-area: posLinkArea;background-color:#e93418;display: flex;
-  align-items: center;color:white;
+.posLink {grid-area: posLinkArea;display: flex;
+  align-items: center;color:white;background-color:#6c7a89;
   justify-content: center;}
 
 .mainContent {grid-area: mainContentArea; background-color:blue;display: flex;
@@ -109,17 +109,17 @@ align-items: center;color:white;
    min-height:400px;
 
 }
-.domainName {grid-area: domainNameArea;background-color:#e93418;display: flex;
+.domainName {grid-area: domainNameArea;background-color:#6c7a89;display: flex;
+  align-items: center;color:white;
+  justify-content: center;}
+.title {grid-area: titleArea;background-color:#6c7a89;color:white;display: flex;
   align-items: center;
   justify-content: center;}
-.title {grid-area: titleArea;background-color:#e93418;display: flex;
-  align-items: center;
-  justify-content: center;}
-.additionalSlot {grid-area: AdditionalSlotArea;background-color:#e93418;color:white;display: flex;
+.additionalSlot {grid-area: AdditionalSlotArea;background-color:#6c7a89;color:white;display: flex;
   align-items: center;
   justify-content: center;}
   
-  .AdditionalSlot2 {grid-area: AdditionalSlotArea2; background-color:#E93418;color:black;display:flex;
+  .AdditionalSlot2 {grid-area: AdditionalSlotArea2; background-color:#6c7a89;color:black;display:flex;
   align-items: center; justify-content:center;
   }
   
@@ -136,7 +136,7 @@ align-items: center;color:white;
     
     
     
-.navigation {grid-area: navigationlArea; background-color:#e93418;display: flex;
+.navigation {grid-area: navigationlArea; background-color:#6c7a89;display: flex;
   align-items: start;
   justify-content: start;
    
@@ -153,8 +153,8 @@ align-items: center;color:white;
   margin: 6% 2%;
   clear: both;
   width: 94%; 
-  color:white;
-  background: #ff512f;
+  color:#d2d7d3;
+  background: #95a5a6;
   //box-shadow:2px 2px 2px;
   font-family: 'Shadows Into Light', cursive;
   font-size:21px;opacity:1;
@@ -193,7 +193,7 @@ align-items: center;color:white;
     
     border-radius:20%; 
       opacity:0.8; 
-    color:#ff512f;
+    color:#FF512F;
    
     background:white;
        
@@ -205,7 +205,7 @@ align-items: center;color:white;
     grid-template-columns: [labels] auto [controls] 1fr;
     grid-auto-flow: row;
     grid-gap: .8em;
-    background: #E93418;
+    background: #6c7a89;
     padding: 0.2em;
   }
   .myForm > label  {
@@ -220,14 +220,14 @@ align-items: center;color:white;
   .myForm > button {
       font-size:18px;
     grid-column: span 2;
-    background-color:#ff512f; color:white; 
+    background-color:#6c7a89; color:white; 
      border-radius: 12px;
   box-shadow: 0 5px #999;
   }  
    
    
     
-   ///
+    
    
    
       
@@ -281,10 +281,10 @@ border:0;
   <ul >
     <li><a class="menuFontColour" href="https://dotboss.digital" target="_blank">Dotboss.Digital</a></li><br>
     <li><a class="menuFontColour" href="https://domainoverflow.com" target="_blank">DomainOverflow.com</a></li><br>
-      <li><a class="menuFontColour" target="_blank" href="https://contato.link"><b>Buy this domain</b></a></li><br>
+      <li><a class="menuFontColour" target="_blank" href="https://e.ventures/pos"><b>Buy this domain</b></a></li><br>
     
     
-    <li><a href="" class="menuFontColour" target="_blank">Contact</a></li>
+    <li><a href="" class="menuFontColour" id="poslinkadditional" target="_blank" style="background-color:#95a5a6;">Contact</a></li>
   </ul>
 </nav>
   
@@ -292,7 +292,7 @@ border:0;
   </div>
   <div id="message1" class="message1">.message1</div>
   <div id="message2" class="message2">.message2</div>
-  <div id="checkoutpage-link" class="posLink">.posLink</div>
+  <div id="checkoutpage-link" id="redlabel" class="posLink" style="background:#6c7a89;color:white;">.posLink</div>
   <div id="additional-slot" class="additionalSlot">
     
   
@@ -301,7 +301,7 @@ border:0;
    <div id="additional-slot2" class="additionalSlot2">
    
    
-       <form class="myForm">
+       <form class="myForm" action="https://e.ventures/pos/universalcontactform.php" method="post">
 
   <label for="customer_name">Name </label>
   <input type="text" name="customer_name" id="customer_name" required>
@@ -481,8 +481,8 @@ function UpdateTemplate () {
         // domainimageelement.innerHTML = domainimage;
    
     var additionalslot1element = document.querySelector("#additional-slot"); 
+    var redlabelelement = document.querySelector("#redlabel");
     
-
    
   // domainimageelement.style.backgroundImage =  "url('"+domainimage+"')";
  //  document.body.style.backgroundImage = "url('img_tree.png')";
@@ -494,13 +494,16 @@ function UpdateTemplate () {
     message2element.innerHTML = sldtld;
     //////////////////////////////////////////
     
-     
-      poselement.innerHTML = poslink; 
+        poselement.style.backgroundColor="#6c7a89"; 
+        poselement.style.color="white";      
+      poselement.innerHTML = "<a href='https://contato.link' target='_blank' style='color:#d2d7d3;'>Created with dotboss.digital</a>"; 
+      uppertitleelement.style.backgroundColor="#6c7a89";
+      uppertitleelement.style.color="white";
     uppertitleelement.innerHTML = uppertitle; 
     //document.getElementById('domain-media').style.src= "+domainimage+";
     document.getElementById("domain-media").src=domainimage;
     
-    
+    redlabelelement.style.backgroundColor="#6c7a89";
     //   domainimageelement.style.backgroundColor="black"; 
              //   document.getElementById('imageslot').style.backgroundRepeat= "no-repeat"; 
                          //   document.getElementById('imageslot').style.backgroundSize ="100%"; 

@@ -176,7 +176,15 @@ function strrevpos($instr, $needle)
 
 <head>
 <head>
-    
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63552696-16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-63552696-16');
+</script>  
       <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
 <meta charset="utf-8">
@@ -186,13 +194,14 @@ function strrevpos($instr, $needle)
 <meta http-equiv="Lang" content="en">
 <meta name="author" content="dotboss.digital">
 <meta http-equiv="Reply-to" content="the@e.ventures">
-<meta name="description" content="Dotboss.Digital, Manage your dot like a boss.">
-<meta name="keywords" content="domain investing, domain management, domaining, .com, gtld, ngtls, website builder for domainers.">
+<meta name="description" content="e.ventures POS, Dotboss.Digital, Manage your dot like a boss.">
+<meta name="keywords" content="domain investing, e.ventures,  domain management, domaining, .com, gtld, ngtls, website builder for domainers.">
 <meta name="creation-date" content="09/06/2017">
     <script src="https://e.ventures/lib/jquery3.min.js"></script>     
        <link rel="stylesheet" href="https://e.ventures/lib/sweetalert2.min.css">
     <script src="https://e.ventures/lib/sweetalert2.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
 
 
  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -619,7 +628,7 @@ function strrevpos($instr, $needle)
 </div>
 
  </div>
- =
+ 
 <script>
   var globalprice="tbd";
   var globalstatus="tbd"; 
