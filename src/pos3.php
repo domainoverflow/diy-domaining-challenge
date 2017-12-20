@@ -530,7 +530,7 @@ function strrevpos($instr, $needle)
 </div>
 <div id="support" class="box support">
 
-<form class="myForm2" action="universalcontactform.php" method="post">
+<form class="myForm2" id="formcounter" action="universalcontactform.php" method="post">
 <h3> Contact the owner of<?echo " ".$sldtld?></h3>
   <label for="customer_name2">Name </label>
   <input type="text" name="customer_name2" id="customer_name2" required>
@@ -544,7 +544,7 @@ function strrevpos($instr, $needle)
   
   </textarea>
 
-  <button>Send</button>
+  <button id="formcounterbutton">Send</button>
 
 </form>
 
@@ -567,7 +567,7 @@ function strrevpos($instr, $needle)
   </div>
 <div id="promo1" class="box promo1">
 
- <form class="myForm" action="universalcontactform.php" method="post">
+ <form class="myForm" id="formcontact" action="universalcontactform.php" method="post">
 <h3>Contact <h3 style="color:#e93418">dotboss.digital</h3></h3>
   <label for="customer_name">Name </label>
   <input type="text" name="customer_name" id="customer_name" required>
@@ -581,7 +581,7 @@ function strrevpos($instr, $needle)
   
   </textarea>
 
-  <button>Send</button>
+  <button id="formcontactbutton">Send</button>
 
 </form>
    
@@ -595,7 +595,7 @@ function strrevpos($instr, $needle)
     </a>
 </div>
 <div id="pos" class="box pos">
-<form class="myForm3" action="universalcontactform.php" method="post">
+<form class="myForm3" id="formhelp" action="universalcontactform.php" method="post">
 <h3 id="buynowlabel"> Get a price quote for <?echo " ".$sldtld?></h3>
   <label for="customer_name3">Name </label>
   <input type="text" name="customer_name2" id="customer_name2" required>
@@ -612,7 +612,7 @@ function strrevpos($instr, $needle)
   
   </textarea>
 
-  <button>Send</button>
+  <button id="formhelpbutton">Send</button>
 
 </form>
 
@@ -753,6 +753,170 @@ console.log ("hostname string:"+hostnamestr);
                 
                 
           $(document).ready(function(){
+              
+              
+            var oneform = $('#formcounter'); 
+            var oneformbutton = $('#formcounterbutton'); 
+            var formhelp = $('#formhelp'); 
+            var formhelpbutton = $('#formhelpbutton'); 
+            var formcontact = $('#formcontact'); 
+            var formcontactbutton = $('#formcontactbutton'); 
+                        
+            
+            
+            
+            
+            oneform.on('submit',function (e) {
+                
+                
+                e.preventDefault(); 
+                                
+                
+         
+              
+              
+               $.ajax({
+      url: 'universalcontactform.php', // form action url
+      type: 'POST', // form submit method get/post
+      dataType: 'html', // request type html/json/xml
+      data: oneform.serialize(), // serialize form data 
+      beforeSend: function() {
+        
+        oneformbutton.html('Sending....'); // change submit button text
+      },
+      success: function(data) {
+        console.log("response received");
+        
+        oneform.trigger('reset'); // reset form
+        oneformbutton.html('Message sent!'); // reset submit button text
+        
+        swal({
+  position: 'top-left',
+  type: 'success',
+  title: 'Thanks for your message, we will reply shortly.',
+  showConfirmButton: true
+  
+})
+        
+        
+        
+        
+        
+        
+        
+      },
+      error: function(e) {
+        console.log(e)
+      }
+    });
+  });
+              
+              
+         /////////////
+         
+              formhelp.on('submit',function (e) {
+                
+                
+                e.preventDefault(); 
+                                
+                
+         
+              
+              
+               $.ajax({
+      url: 'universalcontactform.php', // form action url
+      type: 'POST', // form submit method get/post
+      dataType: 'html', // request type html/json/xml
+      data: formhelp.serialize(), // serialize form data 
+      beforeSend: function() {
+        
+        formhelpbutton.html('Sending....'); // change submit button text
+      },
+      success: function(data) {
+        console.log("response received");
+        
+        formhelp.trigger('reset'); // reset form
+        formhelpbutton.html('Message sent!'); // reset submit button text
+        
+        swal({
+  position: 'top-left',
+  type: 'success',
+  title: 'Thanks for your message, we will reply shortly.',
+  showConfirmButton: true
+  
+})
+        
+    
+        
+      },
+      error: function(e) {
+        console.log(e)
+      }
+    });
+  });
+              
+                   
+              
+              
+             ////////////////////// //////////  
+              
+              
+              
+              
+              
+                 formcontact.on('submit',function (e) {
+                
+                
+                e.preventDefault(); 
+                                
+                
+         
+              
+              
+               $.ajax({
+      url: 'universalcontactform.php', // form action url
+      type: 'POST', // form submit method get/post
+      dataType: 'html', // request type html/json/xml
+      data: formcontact.serialize(), // serialize form data 
+      beforeSend: function() {
+        
+        formcontactbutton.html('Sending....'); // change submit button text
+      },
+      success: function(data) {
+        console.log("response received");
+        
+        formcontact.trigger('reset'); // reset form
+        formcontactbutton.html('Message sent!'); // reset submit button text
+        
+        swal({
+  position: 'top-left',
+  type: 'success',
+  title: 'Thanks for your message, we will reply shortly.',
+  showConfirmButton: true
+  
+})
+        
+    
+        
+      },
+      error: function(e) {
+        console.log(e)
+      }
+    });
+  });
+              
+                   
+              
+                        
+              
+              
+              
+              
+              
+              
+              
+              
+              
              $('#paymentsection').toggle(); 
              $('#pagamento').toggle();
              
@@ -1347,7 +1511,7 @@ paypalstring = paypalstring.replace("loadingsldtld",sldtld);
         
         
         
-        
+    
         
         
         
