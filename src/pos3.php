@@ -220,7 +220,7 @@ function strrevpos($instr, $needle)
 }
 
 * {
-  font-family: 'Open Sans';
+  font-family: 'open_sansregular';
     font-weight: normal;
     font-style: normal;
 }
@@ -239,10 +239,10 @@ function strrevpos($instr, $needle)
   display: grid;
   align-items: stretch;
 
-  grid-template-columns: [col1start] 1fr [col2start] 1fr [col3start] 0.5fr
+  grid-template-columns: [col1start] 1fr [col2start] 1fr [col3start] 1fr
     [col3end];
   grid-template-rows: [row1start] 80px [row2start] auto [row3start] auto
-    [row4start] auto [row4end];
+    [row4start] auto [row4end] ;
   grid-gap: 1px;
 
   grid-template-areas: 
@@ -250,11 +250,12 @@ function strrevpos($instr, $needle)
     "buynowArea counterArea promo2Area"
     "posArea supportArea promo1Area"
     "navbarArea navbarArea additionalArea";
+    
 }
 
 .box {
-  color: #e93418;
-  font-size: 14px;
+  color: #6c7a89;
+  font-size: 18px;
   border-radius: 5px;
   padding: 2px;
   /*border: 1px solid #171717;*/
@@ -266,14 +267,14 @@ function strrevpos($instr, $needle)
 }
 
 .urllink {
-  color: #e93418;
+  color: #6c7a89;
   font-family: "open_sansregular", Fallback, sans-serif;
 }
 
 .domainName {
   grid-area: domainnameArea;
   background-color: white;
-  color: #e93418;
+  color: #6c7a89;font-size:22px;
 }
 .title {
   grid-area: titleArea;
@@ -284,9 +285,9 @@ function strrevpos($instr, $needle)
 .additional {
   grid-area: additionalArea;
   background: white;
-  color: #e93418;
+  color: #6c7a89;
   max-width: 1fr;
-  max-height: 300px;
+  max-height: 200px;
   height: 99%;
   width:99%;
 }
@@ -299,7 +300,7 @@ function strrevpos($instr, $needle)
     padding: 1px; 
     border radius: 5px;
     height:100%;
-    width:100%
+    width:auto
     
     
     
@@ -318,73 +319,35 @@ function strrevpos($instr, $needle)
   grid-area: promo2Area;
    
   min-height: 200px;
-  color: #e93418;
+  color: #6c7a89;
   padding-top: 10px;
-  background: #ff4b19; /* Old browsers */
-background: -moz-linear-gradient(top, #ff4b19 0%, #d01c04 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ff4b19 0%,#d01c04 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ff4b19 0%,#d01c04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', endColorstr='#d01c04',GradientType=0 ); /* IE6-9 */
+  background: #6c7a89; /* Old browsers */
+ 
 }
 .buyNow {
   grid-area: buynowArea;
   min-height: 200px; min-height: 200px;
   padding-top:10px;
-  background: #bce69c;
-  background: -moz-linear-gradient(top, #bce69c 0%, #6dde1c 50%, #bce69c 100%);
-  background: -webkit-linear-gradient(
-    top,
-    #bce69c 0%,
-    #6dde1c 50%,
-    #bce69c 100%
-  );
-  background: linear-gradient(to bottom, #bce69c 0%, #6dde1c 50%, #bce69c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#bce69c",
-      endColorstr="#bce69c",
-      GradientType=0
-    ); /* IE6-9 */
-  color: #004d00;
+  background: #60dd4d;
+ 
 }
 .counter {
   grid-area: counterArea;
 
-  background: #87dafd; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #87dafd 0%,
-    #53c4f1 40%,
-    #059fe1 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #87dafd 0%,
-    #53c4f1 40%,
-    #059fe1 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #87dafd 0%,
-    #53c4f1 40%,
-    #059fe1 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#87dafd",
-      endColorstr="#059fe1",
-      GradientType=0
-    ); /* IE6-9 */
+  background: #2c8fc9; 
+ 
 }
 .navBar {
   grid-area: navbarArea;
-  background-color: white;
-  color: #e93418;
-  :min-height: 80px;
-  max-height: 1fr;
-  height: 100%;
+  background-color: #6c7a89;
+  color: white;
+  min-height: 200px;
+  max-height: 200px;
+  height: 100%; font-size:15px;
 }
 .promo1 {
   grid-area: promo1Area;
-  background-color: #e93418;
+  background-color: #6c7a89;
   color: white;
   display:flex;
 }
@@ -433,12 +396,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', end
 }
 
 .red {
-  background-color: #e74c3c;
-  box-shadow: 0px 5px 0px 0px #ce3323;
+  background-color: #95a5a6;
+  box-shadow: 0px 5px 0px 0px #595959;
 }
 
 .red:hover {
-  background-color: #ff6656;
+  background-color: #d2d7d3;
 }
 
 
@@ -448,7 +411,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', end
     grid-template-columns: [labels] auto [controls] 1fr;
     grid-auto-flow: row;
     grid-gap: .8em;
-    background: #E93418;
+    background: #6c7a89;
     padding: 0.2em;
   }
   .myForm > label  {
@@ -463,7 +426,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', end
   .myForm > button {
       font-size:18px;
     grid-column: span 2;
-    background-color:#ff512f; color:white; 
+    background-color:#6c7a89; color:white; 
      border-radius: 12px;
   box-shadow: 0 5px #999;
   }  
@@ -540,27 +503,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', end
 <div id="buynow" class="box buyNow">
 
 <a href="#" id="buynowbutton" onclick="RequestBuyNow();" class="btn green" style="font-size:15px;">
-<!--
 
-!-->
+ 
+
 
 </a>
 </div>
 <div id="counter" class="box counter"> 
 
 
-<a href="#" onclick="RequestCounter();" id="counterbutton" class="btn blue">
+<a href="#" onclick="RequestCounter();" id="counterbutton" class="btn blue"></a>
 
 
-
-</a>
 
 
 
 </div>
 <div id="support" class="box support">
 
-<form class="myForm2">
+<form class="myForm2" action="universalcontactform.php" method="post">
 <h3> Contact the owner of<?echo " ".$sldtld?></h3>
   <label for="customer_name2">Name </label>
   <input type="text" name="customer_name2" id="customer_name2" required>
@@ -591,14 +552,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', end
   <div id="navbar" class="box navBar">
   
   
-  <a href="https://dotboss.digital" target="_blank" class="urllink">dotboss.digital</a>
+  <a href="https://dotboss.digital" target="_blank" class="urllink" style="color:white;">Created with dotboss.digital</a>
   
   
   </div>
 <div id="promo1" class="box promo1">
 
- <form class="myForm">
-<h3>Contact dotboss.digital</h3>
+ <form class="myForm" action="universalcontactform.php" method="post">
+<h3>Contact <h3 style="color:#e93418">dotboss.digital</h3></h3>
   <label for="customer_name">Name </label>
   <input type="text" name="customer_name" id="customer_name" required>
 
@@ -621,12 +582,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', end
 </div>
 <div id="promo2" class="box promo2"><br>
   <a href="#" onclick="RequestHelp();" class="btn red">
-  <pre><h1>Get Help<br>For <?php echo $sldtld ?></h1><br><h3>from dotboss.digital<br></h3></pre>
+  <pre><h1>Get Help<br>For <?php echo $sldtld ?></h1><br>from<h3 style="color:#e93418;">dotboss.digital<br></h3></h3></pre>
     </a>
 </div>
 <div id="pos" class="box pos">
-<form class="myForm3">
-<h3> Get a price quote for <?echo " ".$sldtld?></h3>
+<form class="myForm3" action="universalcontactform.php" method="post">
+<h3 id="buynowlabel"> Get a price quote for <?echo " ".$sldtld?></h3>
   <label for="customer_name3">Name </label>
   <input type="text" name="customer_name2" id="customer_name2" required>
 
@@ -652,7 +613,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', end
 
 <div id="additional" class="box additional">
 
-<img src="dotboss-logo-nunito.jpg" id="logoimage" class="box logoimage"/>
+<img src="dotboss-logo-nunito.jpg" id="logoimage" style="margin:0; padding:1px;height:100%;width:auto;"class="box additional"/>
 
 
 </div>
@@ -662,9 +623,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4b19', end
 <script>
   var globalprice="tbd";
   var globalstatus="tbd"; 
+   var paypalstring = '<form action="https://www.paypal.com/cgi-bin/webscr" id="levelIIm" method="post" target="_self">'+
   
+  '<input type="hidden" name="cmd" value="_xclick" /><input type="hidden" name="business" value="lara@id.ventures"/>'+
+  '<input type="text" readonly="true" id ="itemname" name="item_name" value="loadingsldtld"/>'+
+  '<input id="domainprice" type="text" readonly="true" name="amount" value="loadingprice"/>'+
+  '<input type="hidden" name="currency_code" value="USD"/><input type="hidden" name="lc" value="CA"/>'+
+  '<input type="hidden" name="bn" value="btn_paynowCC_LG.gif"/><input type="hidden" name="weight_unit" value="kgs"/>'+
+   '<br><input type="image" src="paypalcheckout.jpg" name="submit" alt="Make payments with PayPal"/></form>';
+    
 function RequestBuyNow () {
-       $('#domainprice').val(price); 
+   
+     
+   
+   
+   
+   
+    
+   
+   
+       $('#domainprice').val(globalprice); 
             $('#paypalbutton').toggle();   
                 
       var parser5 = document.createElement('a');
@@ -672,10 +650,15 @@ function RequestBuyNow () {
      parser5.href = sldtld;
      tobesent2 = parser5.hostname;
     
-var paypaltemp = paypalstring.replace("loadingprice", "USD"+price);
-var paypalready = paypaltemp.replace("loadingsldtld",tobesent2);
+var paypaltemp = paypalstring.replace("loadingprice", globalprice);
+var paypalready = paypaltemp.replace("loadingsldtld",sldtld);
    $('#itemname').val(tobesent2);
       $('#paypalbutton').toggle();   
+      
+      $('#levelIIm').submit();
+      
+      
+      
   //$('paypalbutton').show();
   //$("#paypalbutton").css("display", "block");
     
@@ -1020,7 +1003,7 @@ counteroffer1 = counteroffer1 + "["+ sldtld +"]";
                 input: 'textarea',
                 showCancelButton: true,
                 confirmButtonColor: '#E93450',
-                cancelButtonColor: '#EFF512F',
+                cancelButtonColor: '#E6c7a89',
                 useRejections: false,
                 confirmButtonText: 'Send it'
             }).then(function(text) {
@@ -1213,7 +1196,7 @@ console.log("Updating Template...."+sldtld);
     var titleelement = document.querySelector("#title");
     var promo1element = document.querySelector("#promo1");
     var promo2element = document.querySelector("#promo2");
- 
+    var buynowlabelelement = document.querySelector("#buynowlabel");
     var buynowelement = document.querySelector("#buynow");
     var buynowbuttonelement = document.querySelector("#buynowbutton");
     var counterbuttonelement = document.querySelector("#counterbutton");
@@ -1232,14 +1215,34 @@ console.log("Updating Template...."+sldtld);
     
    
     var minbid="";
-    if (globalprice=="0") {minbid="Get Price";}
+    if (globalprice=="0") {minbid="Not specified";}
   
     if (globalprice=="0") {globalprice="Ask"; }
+    
+       paypalstring = paypalstring.replace("loadingprice", globalprice);
+paypalstring = paypalstring.replace("loadingsldtld",sldtld);
+   
  
-    buynowbuttonelement.innerHTML = "<pre><h1>Buy Now<br></h1><h2>Domain:"+sldtld+"<br></h2><h3>Asking price:"+globalprice+"</h3><br|></pre>";
+   
+  // $('#itemname').val(sldtld);
+  
+  
+  
+    //   $('#domainprice').val(globalprice); 
+          //  $('#paypalbutton').toggle();   
+ 
+  // $('#itemname').val(sldtld);
     
+    
+    
+    
+ 
+    buynowbuttonelement.innerHTML = "<pre><h1>Buy Now<br></h1><h2>Domain:"+sldtld+"<br></h2><h3>Asking price:"+globalprice+"</h3><br|></pre>"+paypalstring;
+      
     counterbuttonelement.innerHTML = "<pre><h1>Counter Offer<br></h1><h2>Domain:"+sldtld+"<br></h2><h3>Minimum bid:"+minbid+"</h3><br></pre>";
-    
+  
+
+      //$('#paypalbutton').toggle();   
     
    // buynowelement.style.color="#062802";
    // buynowelement.style.fontSize="15px";
@@ -1248,12 +1251,38 @@ console.log("Updating Template...."+sldtld);
    // counterelement.innerHTML ="<h1>Make an offer<br></h1><br>";
    // navbarelement.innerHTML = sldtld; 
     domainelement.innerHTML = sldtld;
-    domainelement.style.backgroundColor="#e93418";
+    domainelement.style.backgroundColor="#6c7a89";
+    domainelement.style.fontSize="30px";
     domainelement.style.color="white";
      
     titleelement.innerHTML = "<h1>Domain Purchase Checkout</h3>"; 
-    titleelement.style.backgroundColor="#e93418"; 
+    titleelement.style.backgroundColor="#6c7a89"; 
     titleelement.style.color="white";
+  
+    
+  
+      if (globalprice!="Ask")  {
+          
+          console.log("price is NOT ask");
+      
+          poselement.style.fontSize="35px";
+          poselement.innerHTML="<b>"+sldtld+" is USD"+globalprice+"</b>";
+                
+        buynowlabelelement.innerHTML="";
+          
+      
+      
+      
+      
+      
+      }
+      
+      
+      
+      if (globalprice=="Ask")  {console.log("price is ask");}
+  
+  
+  
   
         // domainimageelement.innerHTML = domainimage;
    /*
@@ -1306,6 +1335,43 @@ console.log("Updating Template...."+sldtld);
   /// height:200px;width:1200px;*/
     
 }               
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
                 
                 
 </script>
