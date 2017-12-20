@@ -26,7 +26,8 @@
   <script type="text/javascript" src="https://e.ventures/content/more-balloons/moveobj.js"></script>  
  
  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
-
+      <link rel="stylesheet" href="https://e.ventures/lib/sweetalert2.min.css">
+    <script src="https://e.ventures/lib/sweetalert2.min.js"></script>
  
  
 </head>
@@ -301,7 +302,7 @@ border:0;
    <div id="additional-slot2" class="additionalSlot2">
    
    
-       <form class="myForm" action="https://e.ventures/pos/universalcontactform.php" method="post">
+       <form class="myForm" id ="myform" action="https://e.ventures/pos/universalcontactform.php" method="post">
 
   <label for="customer_name">Name </label>
   <input type="text" name="customer_name" id="customer_name" required>
@@ -315,7 +316,7 @@ border:0;
   
   </textarea>
 
-  <button>Send</button>
+  <button id="myformbutton">Send</button>
 
 </form>
    
@@ -400,8 +401,93 @@ element.style.width = "100px";
  $( document ).ready(function() {
     console.log( "ready!" );
       GetDomains() ; 
- 
+      var myform = $('#myform'); 
+      var myformbutton = $('#myformbutton'); 
+                        
+            
           
+      myform.on('submit',function (e) {
+                
+                
+                e.preventDefault(); 
+                                
+                
+         
+              
+              
+               $.ajax({
+      url: 'https://e.ventures/pos/universalcontactform.php', // form action url
+      type: 'POST', // form submit method get/post
+      dataType: 'html', // request type html/json/xml
+      data: myform.serialize(), // serialize form data 
+      beforeSend: function() {
+        
+        myformbutton.html('Sending....'); // change submit button text
+      },
+      success: function(data) {
+        console.log("response received");
+        
+        myform.trigger('reset'); // reset form
+        myformbutton.html('Message sent!'); // reset submit button text
+        
+        swal({
+  position: 'top-left',
+  type: 'success',
+  title: 'Thanks for your message, we will reply shortly.',
+  showConfirmButton: true
+  
+})
+        
+    
+        
+      },
+      error: function(e) {
+        console.log(e)
+      }
+    });
+  });
+              
+                   
+                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        
        
   });
@@ -503,7 +589,7 @@ function UpdateTemplate () {
     //document.getElementById('domain-media').style.src= "+domainimage+";
     document.getElementById("domain-media").src=domainimage;
     
-    redlabelelement.style.backgroundColor="#6c7a89";
+    //redlabelelement.style.backgroundColor="#6c7a89";
     //   domainimageelement.style.backgroundColor="black"; 
              //   document.getElementById('imageslot').style.backgroundRepeat= "no-repeat"; 
                          //   document.getElementById('imageslot').style.backgroundSize ="100%"; 
