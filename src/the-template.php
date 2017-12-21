@@ -47,9 +47,7 @@
 // License: MIT
 */
 
-
-
-
+ 
 
   
 
@@ -237,6 +235,27 @@ align-items: center;color:white;
 border:0;
 } 
     
+  
+  // check browser compatibility
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
 </style>    
 
@@ -246,8 +265,20 @@ border:0;
     
     
 <body>
-    
+   
+
+
+
+
+
+
+
   <div id="grid" class="grid">
+  
+  
+   
+  
+  
 
   <div id="domain-name" class="domainName">.domainName</div>
 <!--  <img id="domain-media" class="domainMedia" src="https://e.ventures/partV/forsale5.jpg">
@@ -329,6 +360,10 @@ border:0;
   
 </div>
   
+  
+  
+   
+  
 <DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:47; height:68;">
 <A HREF="https://e.ventures/pos" target="_blank"><IMG SRC="b1.gif"  BORDER=0></a>
 </DIV>
@@ -346,7 +381,7 @@ border:0;
    <script>
     
     
-    
+    var globalgeo="tbd"; 
     
     
     
@@ -409,7 +444,7 @@ element.style.width = "100px";
                
        var client_ip = '<?php $ipaddress = '';if (getenv('HTTP_CLIENT_IP')){$ipaddress="" ; getenv('HTTP_CLIENT_IP');}else if(getenv('HTTP_X_FORWARDED_FOR')) {  $ipaddress = $ipaddress . getenv('HTTP_X_FORWARDED_FOR');}else if(getenv('HTTP_X_FORWARDED')) {$ipaddress = $ipaddress .  getenv('HTTP_X_FORWARDED');} else if(getenv('HTTP_FORWARDED_FOR')) { $ipaddress = $ipaddress . getenv('HTTP_FORWARDED_FOR');}else if(getenv('HTTP_FORWARDED')) {$ipaddress = $ipaddress . getenv('HTTP_FORWARDED');}else if(getenv('REMOTE_ADDR')) {$ipaddress = $ipaddress . getenv('REMOTE_ADDR');}else $ipaddress = $ipaddress .  'UNKNOWN'; echo $ipaddress ;?>' ;
 
-    
+  //  globalgeo = globalgeo+client_id;
      
      
      var templocation="";      jQuery.ajaxSetup({async:false});
@@ -716,6 +751,21 @@ function UpdateTemplate () {
   /// height:200px;width:1200px;*/
     
 }     
+       
+       
+       
+    
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        
        
        
