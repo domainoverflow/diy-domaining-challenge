@@ -119,7 +119,7 @@ function strrevpos($instr, $needle)
    
   if($protocol=="tbd") {//file_put_contents("router-php.error","could not determine protocol"); 
   
-    echo "HTTP_REFERER contain an invalid url for sld.tld ?";exit(1);}
+    echo "You've arrived here without a referrer. <a href='https://e.ventures' target='_blank'>Please click here to return.</a>";$protocol='https://';}
 
   // check for sld.tld/somefile.php 
     
@@ -149,7 +149,7 @@ function strrevpos($instr, $needle)
             
                 if ($subdomaincounter==1) {$subdomain="no";}
                 if ($subdomaincounter>1) {$subdomain="yes";} 
-                if ($subdomain=="tbd") {echo "could not determine subdomain presence. please check HTTP_REFERER sent by the browser.try chrome.";}
+                if ($subdomain=="tbd") {$subdomain="no";}
    
             if ($subdomain=="yes") {
                 
@@ -622,7 +622,7 @@ function strrevpos($instr, $needle)
 
 <div id="additional" class="box additional">
 
-<img src="dotboss-logo-nunito.jpg" id="logoimage" style="margin:0; padding:1px;height:100%;width:auto;"class="box additional"/>
+<img onclick="CallDotBoss();"src="dotboss-logo-nunito.jpg" id="logoimage" style="margin:0; padding:1px;height:100%;width:auto;"class="box additional"/>
 
 
 </div>
@@ -1511,12 +1511,25 @@ paypalstring = paypalstring.replace("loadingsldtld",sldtld);
         
         
         
-    
+    function CallDotBoss () {
+        
+        
+        
+  window.location.href = "https://backengine.dotboss.digital/users/sign_up";
+//       openInNewTab('htpps://backengine.dotboss.digital/users/sign_up');  
+  // one cant override the user's preference. even if it is possible.      
+        
+        
+        
+    }
         
         
         
         
-        
+        function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
         
         
         
