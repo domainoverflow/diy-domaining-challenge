@@ -640,6 +640,88 @@ function strrevpos($instr, $needle)
   '<input type="hidden" name="currency_code" value="USD"/><input type="hidden" name="lc" value="CA"/>'+
   '<input type="hidden" name="bn" value="btn_paynowCC_LG.gif"/><input type="hidden" name="weight_unit" value="kgs"/>'+
    '<br><input type="image" src="paypalcheckout.jpg" name="submit" alt="Make payments with PayPal"/></form>';
+  
+        var   globalclientlocation ; 
+       var isMobile = false; //initiate as false
+       var isitmobile2 = false; 
+       var registrationhelper="";
+       var screenformat = "services/"; 
+       var formatsize = 'dashboard/';
+  
+   var requestedauth="tbd";   
+       var fullname="tbd"; 
+       var fullcountry="tbd"; 
+       var fullphone = "tbd";
+       var fullcity="tbd" ;
+       var fullreceived;
+       var enveloperesult;
+       var thisresult;
+      // SendAnyData() ; 
+
+         var email="tbd";
+              
+              
+               
+       var client_ip = '<?php $ipaddress = '';if (getenv('HTTP_CLIENT_IP')){$ipaddress="" ; getenv('HTTP_CLIENT_IP');}else if(getenv('HTTP_X_FORWARDED_FOR')) {  $ipaddress = $ipaddress . getenv('HTTP_X_FORWARDED_FOR');}else if(getenv('HTTP_X_FORWARDED')) {$ipaddress = $ipaddress .  getenv('HTTP_X_FORWARDED');} else if(getenv('HTTP_FORWARDED_FOR')) { $ipaddress = $ipaddress . getenv('HTTP_FORWARDED_FOR');}else if(getenv('HTTP_FORWARDED')) {$ipaddress = $ipaddress . getenv('HTTP_FORWARDED');}else if(getenv('REMOTE_ADDR')) {$ipaddress = $ipaddress . getenv('REMOTE_ADDR');}else $ipaddress = $ipaddress .  'UNKNOWN'; echo $ipaddress ;?>' ;
+
+    
+     
+     
+     var templocation="";      jQuery.ajaxSetup({async:false});
+      $.get("https://freegeoip.net/json/"+client_ip, function(data, status){
+           var divider="<br>";
+              clstring =        "IP:"+data.ip + divider + "Country Code:"+data.country_code + divider + "Country Name:"+data.country_name + divider + 
+
+                    "Region Code:"+data.region_code + divider + "Region Name:"+data.region_name + divider + "City:"+data.city + divider + "Postal Code:"+data.zip_code + 
+
+                    divider + "Time Zone:"+data.time_zone + 
+
+                    divider + "Latitude:"+data.latitude + divider + "Longitude:"+data.longitude + divider + "Area Code:"+data.metro_code ;
+
+
+
+
+
+                 globalclientlocation =  data;   
+console.log(data);
+                    console.log(clstring);    
+      });     // get 
+         
+var databutton="button";
+
+
+
+         
+              jQuery.ajaxSetup({async:false});     
+
+
+                   $.post("eventures-mailbox.php",{data:globalclientlocation}, function(data, status){
+
+     console.log("Data: " + data + "\nStatus: " + status);   
+        
+    });            
+
+    
+                           
+
+       jQuery.ajaxSetup({async:true});  
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
 function RequestBuyNow () {
    
