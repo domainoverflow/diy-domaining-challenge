@@ -50,7 +50,7 @@ Simply git clone the project and upload src/ folder to your server or local env 
 <br><b>Stop paying for domain auctions!</br>
 <br>
 Index of articles:
-Next article / release: December, 22nd 2017
+Next article / release: December, 27th 2017
 -----------------------------
 
 DIY Domaining Challenge Custom Domain Marketplace series from DomainOverflow.com
