@@ -50,7 +50,7 @@ Simply git clone the project and upload src/ folder to your server or local env 
 <br><b>Stop paying for domain auctions!</br>
 <br>
 Index of articles:
-Next article / release: December, 27th 2017
+Next article / release: January, 15th 2017 ( Adding support to IDN domains ).
 -----------------------------
 
 DIY Domaining Challenge Custom Domain Marketplace series from DomainOverflow.com
@@ -71,7 +71,7 @@ target="_blank"> DOMAINING DIY CHALLENGE Part II: Creating a proper checkout pag
   
   <a href="https://domainoverflow.com/index.php/2017/12/06/diy-domaining-marketplace-series-part-iv-2-2-designing-admin-dashboard-bulk-template-publisher/" target="_blank">  DOMAINING DIY CHALLENGE Part  IV 2/2: The Admin panel.Cpanel Bulk Domain Adder</a><br><br>
    <a href="https://domainoverflow.com/index.php/2017/12/16/diy-domaining-marketplace-series-part-v-1-2-enhancing-template-css-grid/" target="_blank">  DOMAINING DIY CHALLENGE Part  V 1/2: Enhancing our template with CSS Grid</a><br>
-   
+   <a href="https://domainoverflow.com" target="_blank">  DOMAINING DIY CHALLENGE Part IV 2/2: The Publisher</a><br>
 <br><br>
 ![alt_text](https://e.ventures/partV/diy-domaining-challenge/forsale5.jpg)<br> 
 ![alt_text](https://i2.wp.com/domainoverflow.com/wp-content/uploads/2017/11/checkout-buttons.png?ssl=1)<br>
