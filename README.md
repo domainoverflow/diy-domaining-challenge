@@ -71,7 +71,7 @@ target="_blank"> DOMAINING DIY CHALLENGE Part II: Creating a proper checkout pag
   
   <a href="https://domainoverflow.com/index.php/2017/12/06/diy-domaining-marketplace-series-part-iv-2-2-designing-admin-dashboard-bulk-template-publisher/" target="_blank">  DOMAINING DIY CHALLENGE Part  IV 2/2: The Admin panel.Cpanel Bulk Domain Adder</a><br><br>
    <a href="https://domainoverflow.com/index.php/2017/12/16/diy-domaining-marketplace-series-part-v-1-2-enhancing-template-css-grid/" target="_blank">  DOMAINING DIY CHALLENGE Part  V 1/2: Enhancing our template with CSS Grid</a><br><br>
-   <a href="https://domainoverflow.com" target="_blank">  DOMAINING DIY CHALLENGE Part IV 2/2: The Publisher</a><br>
+   <a href="https://domainoverflow.com" target="_blank">  DOMAINING DIY CHALLENGE Part V 2/2: The Publisher</a><br>
 <br><br>
 
  
