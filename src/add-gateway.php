@@ -1,7 +1,9 @@
 <?php
 
 include 'xmlapi.php'; // Cpanel WHM Library for API 2 
-print_r($_POST);
+print_r($_POST); // print_rS and echos should be turned off once tested
+
+// print_rS and echos should be turned off once tested
 
  ini_set('max_execution_time', 300); //300 seconds = 5 minutes
   
@@ -13,11 +15,9 @@ $chosengateway = $_POST["chosengateway"];
 $marketplacename = $_POST["marketplacename"]; 
 $user = $_POST["authuser"];
 $pwd = $_POST["authpassword"]; 
-
-
-
-
-if ($chosengateway=="cpanel") {
+ 
+// Cloud based or non-cloud based with cpanel/whm
+if ($chosengateway=="cpanel") { // we will use cpanel apis       
     
 print_r($domains);
 echo $chosengateway; 
@@ -198,7 +198,8 @@ $resultstr = $json_client->api2_query( $auth_user, 'AddonDomain', 'addaddondomai
 // please throw and catch as needed on your context
 // I use this in a context that is asynch .. and with a real time queue...
 
-
+  // this is mainly because there are two possible options to receive an output from cpanel
+  // the first is array and the second is json, the following fallback identifies which.
   $r=AnalyseCpanelAPIResponse($resultstr,$pathonly, $domain, $dir);
 
      
@@ -289,19 +290,21 @@ $counter=$counter+1;
  
 }  // gateway if 
 
-else {
-    
-$domains = $_POST["domainlist"]; // ARRAY ! 
-        
-    // Handle non-cpanel publishing requests
-      
-   // get additional params 
-$apiurl = $_POST["apiurl"]; 
-$customapi = $_POST["customapi"]; 
-$apitoken = $_POST["apitoken"]; 
-$customfield = $_POST["customfield"];  
- $url = $apiurl;
+if ($chosengateway=="noncpanel" { 
+    //Cloud based or Non-Cloud based hosting account, without cpanel/whm
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    $thisdocroot = FindDomainDocRoot() ;
+    CopyObject ($stackpath); 
+}
 
+if ($chosengateway=="api") {
+ 
+    // Handle non-cpanel publishing requests
+      // api based 
+   // get additional params 
+$apiurl = $_POST["apiurl"]; $customapi = $_POST["customapi"]; 
+$apitoken = $_POST["apitoken"]; $customfield = $_POST["customfield"];  
+ $url = $apiurl;
  // this is where you can custom the request ... 
  
 $data = array(
@@ -702,7 +705,7 @@ return $fullresponse;
 
 
 function Append2Log ($string) {
-    $string ='domainoverflow.com e.ventures dotboss.digital 2014-2017 All Rights Reserved';
+    $string ='domainoverflow.com e.ventures dotboss.digital 2014-2018 All Rights Reserved';
     
  
     $lever='on'; 
@@ -774,24 +777,7 @@ function SaveDigitalAssetBatchAdd ( $filename, $array)
  
  
  
-  function VipConfig ($configpathonly) {
-      
-    s();  
-    echo $configpathonly; s() ; 
-    
-        //$db = new JsonDB($configpathonly );
-           $db = new JsonDB('../persisted/sergioatiddotventures/library/' );
-$dbresults = $db -> selectAll("vipconfig") ;
- 
-    
-    return $dbresults; 
-       
-      
-      
-      
-      
-  }
-
+  
               function AnalyseCpanelAPIResponse ($response, $pathonly, $domain, $dir) {
             $timestamp = date('l jS \of F Y h:i:s A'); 
        $datatype = gettype ($response); 
@@ -891,7 +877,13 @@ $dbresults = $db -> selectAll("vipconfig") ;
 
    }
 
+   
+   function FindDomainDocRoot ($domain){ return shell_exec("./getdocroot $domain");}
+   function CopyObject ($domains,$template) {return shell_exec("./copyobject $template $domains");}
+   
+   
 ?>
+
 
 
 
